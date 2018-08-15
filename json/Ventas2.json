@@ -1,0 +1,101 @@
+{
+    "data": [{
+            "Producto": "5641",
+            "Descripcion": "ABUELITA PAQ. 6 TAB D 90 GRS. (24)",
+            "Cantidad": "      120",
+            "Precio": "      42.44",
+            "Porcentaje": "       0.00",
+            "Importe": "   5,092.80",
+            "Neto": "     5,092.80"
+        }, {
+            "Producto": "5149",
+            "Descripcion": "CARLOS V STICK 8GRS (20)",
+            "Cantidad": "       40",
+            "Precio": "      18.52",
+            "Porcentaje": "       0.00",
+            "Importe": "     740.80",
+            "Neto": "       740.80"
+        }, {
+            "Producto": "273",
+            "Descripcion": "CARNATION EVAPORADA 360 GRS (48)",
+            "Cantidad": "       96",
+            "Precio": "      10.84",
+            "Porcentaje": "       0.00",
+            "Importe": "   1,040.64",
+            "Neto": "     1,040.64"
+        }, {
+            "Producto": "010",
+            "Descripcion": "LA LECHERA 387GRS. (48)",
+            "Cantidad": "       52",
+            "Precio": "      15.62",
+            "Porcentaje": "       0.00",
+            "Importe": "     812.24",
+            "Neto": "       812.24"
+        }, {
+            "Producto": "4233",
+            "Descripcion": "MORELIA PRESIDENCIAL 357 GRS  (24)",
+            "Cantidad": "       24",
+            "Precio": "      16.59",
+            "Porcentaje": "       0.00",
+            "Importe": "     398.16",
+            "Neto": "       398.16"
+        }, {
+            "Producto": "6044",
+            "Descripcion": "NESCAFE CLASICO 42 GRS (16)",
+            "Cantidad": "       32",
+            "Precio": "      15.63",
+            "Porcentaje": "       0.00",
+            "Importe": "     500.16",
+            "Neto": "       500.16"
+        }, {
+            "Producto": "8522",
+            "Descripcion": "MONTES PALETA CUADRADA 40 PZS (25)",
+            "Cantidad": "       25",
+            "Precio": "      25.93",
+            "Porcentaje": "       0.00",
+            "Importe": "     648.25",
+            "Neto": "       648.25"
+        }, {
+            "Producto": "8521",
+            "Descripcion": "MONTES DAMY BLS 100 PZS (12)",
+            "Cantidad": "       36",
+            "Precio": "      40.75",
+            "Porcentaje": "       0.00",
+            "Importe": "   1,467.00",
+            "Neto": "     1,467.00"
+        }, {
+            "Producto": "8508",
+            "Descripcion": "MONTES SUPER NATILLA 100 PZ (20)",
+            "Cantidad": "       40",
+            "Precio": "      40.75",
+            "Porcentaje": "       0.00",
+            "Importe": "   1,630.00",
+            "Neto": "     1,630.00"
+        }, {
+            "Producto": "8526",
+            "Descripcion": "MONTES  CACHITOS 100 PZS (20)",
+            "Cantidad": "       40",
+            "Precio": "      39.82",
+            "Porcentaje": "       0.00",
+            "Importe": "   1,592.80",
+            "Neto": "     1,592.80"
+        }, {
+            "Producto": "",
+            "Descripcion": "",
+            "Cantidad": "        1",
+            "Precio": "       0.00",
+            "Porcentaje": "       0.00",
+            "Importe": "       0.00",
+            "Neto": "         0.00"
+        }
+    ],
+    "Total": {
+        "Venta": "0051868",
+        "TCantidad": "        506",
+        "TImporte": "    13,922.85",
+        "Tieps": "       925.59",
+        "Tiva": "         0.00",
+        "Tsaldo": "    14,776.36",
+        "TNeto": "    13,922.85"
+    }
+}
