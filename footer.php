@@ -28,6 +28,10 @@
 <script src="asset/js/buttons.html5.min.js"></script>
 <script type="text/javascript" src="asset/js/loader.js"></script>
 <script type="text/javascript" src="asset/js/loadVentas.js"></script>
+
+<!-- Web Service Login -->
+<script src="asset/js/validator.min.js"></script>
+<script type="text/javascript" src="asset/js/consulta.js"></script>
 <script>
 
     /**

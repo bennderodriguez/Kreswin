@@ -16,7 +16,7 @@
             <div class="col-sm-3">
                 <div class="form-group">
                     <label>Cantidad</label>
-                    <input type="number" class="form-control form-control-sm" id="CantProd" name="CantProd" required>
+                    <!--input type="number" class="form-control form-control-sm" id="CantProd" value name="CantProd" value="" required-->
                 </div>
             </div>
             <div class="col-sm-3">
