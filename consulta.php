@@ -1,9 +1,10 @@
 <?php include 'headers.php'; ?>
-<div class="container">
+
+<form class="form-horizontal" id="ActualizaPedido" role="form" autocomplete="off"><br>
     <div id="demo"></div>
-    <center><h4>Consulta de Venta Número <span id="NumVent"></span> </h4></center>
-    <form class="form-horizontal" id="ActualizaPedido" role="form" autocomplete="off"><br>
-        <div class="row" style="background-color: #eaf1f8; padding-top: 15px">
+    <center><h5>Consulta de Venta Número <span id="NumVent"></span> </h5></center>
+    <div class="bkg-div">
+        <div class="row">
             <div class="col-sm-6" id="Sec1">
                 <div class="form-group">
                     <input type="text" class="form-control form-control-sm" id="Nombre" name="Nombre" placeholder="Nombre" title="Nombre del Cliente" readonly="true">
@@ -62,10 +63,10 @@
                 </div>
             </div>
         </div>
-        <div class="row" style="background-color: #eaf1f8; padding-top: 15px">
+        <div class="row">
             <div class="col-sm-12">
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-6">
                         <div class="form-check">
                             <label class="form-check-label">
                                 <input type="checkbox" class="form-check-input" value="20" id="Destino" name="Destino" title="Destino">Destino
@@ -92,7 +93,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="col-sm-8">
+                    <div class="col-sm-6">
                         <div class="form-group">
                             <input type="text" class="form-control form-control-sm" id="Nota1" name="Nota1" placeholder="Notas" title="Notas">
                         </div>
@@ -108,89 +109,82 @@
                 </div>
             </div>
         </div>
-        <div class="clearfix">
-            <span class="float-right">
-                <button type="submit" class="btn btn-outline-success btn-sm">Actualizar</button>
-            </span>
+    </div>
+    <div class="clearfix">
+        <span class="float-right">
+            <button type="submit" class="btn btn-outline-success btn-sm">Actualizar</button>
+        </span>
+    </div>
+</form>
+<hr>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="btn-group float-right">
+            <button type="button" class="btn btn-outline-info btn-sm" id="btnAgregar" data-toggle="collapse" data-target="#demo" onclick="ValidBtnProducto()" title="Agregar Producto" disabled>Agregar <span class="pe-7s-cart"></span></button>
+            <button type="button" class="btn btn-outline-info btn-sm" id="del" onclick="delRow()">Eliminar</button>
+            <button type="submit" class="btn btn-outline-info btn-sm">Salir</button>
         </div>
-    </form>
-    <hr>
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="btn-group float-right">
-                <button type="button" class="btn btn-outline-info btn-sm" id="btnAgregar" data-toggle="collapse" data-target="#demo" onclick="ValidBtnProducto()" title="Agregar Producto" disabled>Agregar <span class="pe-7s-cart"></span></button>
-                <button type="button" class="btn btn-outline-info btn-sm" id="del" onclick="delRow()">Eliminar</button>
-                <button type="submit" class="btn btn-outline-info btn-sm">Salir</button>
+        <br><hr>
+        <?php include './carrito.php'; ?>
+        <hr>
+        <div class="table-responsive">
+            <div class="table-responsive-sm">
+                <table class="table table-striped table-sm" id="ventas" >
+                    <thead>
+                        <tr class="table-primary">
+                            <th>Producto</th>
+                            <th>Descripcion</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                            <th>Porcentaje</th>
+                            <th>Importe</th>
+                            <th>Neto</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr class="table-active">
+                            <th>Total</th>
+                            <th></th>
+                            <th><span id="TCantidad"></span></th>
+                            <th></th>
+                            <th></th>
+                            <th><span id="TImporte"></span></th>
+                            <th><span id="TNeto"></span></th>
+                        </tr>
+                    </tfoot>
+                </table>
             </div>
-            <br><hr>
-            <?php include './carrito.php'; ?>
-            <hr>
-            <div class="table-responsive">
-                <div class="table-responsive-sm">
-                    <table class="table table-striped table-sm" id="ventas" >
-                        <thead>
-                            <tr class="table-primary">
-                                <th>Producto</th>
-                                <th>Descripcion</th>
-                                <th>Cantidad</th>
-                                <th>Precio</th>
-                                <th>Porcentaje</th>
-                                <th>Importe</th>
-                                <th>Neto</th>
-                            </tr>
-                        </thead>
-                        <tfoot>
-                            <tr class="table-active">
-                                <th>Total</th>
-                                <th></th>
-                                <th><span id="TCantidad"></span></th>
-                                <th></th>
-                                <th></th>
-                                <th><span id="TImporte"></span></th>
-                                <th><span id="TNeto"></span></th>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <div></div>
-    </div><br>
-    <div class="row">
-        <div class="col-sm-8">
-            meee
-        </div>
-        <div class="col-sm-4" id="iva-Box">
-            <div class="input-group mb-3 input-group-sm">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">Suma</span>
-                </div>
-                <input type="text" class="form-control" id="Tieps" readonly>
-            </div>
-
-            <div class="input-group mb-3 input-group-sm">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">I.V.A</span>
-                </div>
-                <input type="text" class="form-control" id="Tiva" readonly>
-            </div>
-
-            <div class="input-group mb-3 input-group-sm">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">Total</span>
-                </div>
-                <input type="text" class="form-control" id="Tsaldo" readonly>
-            </div>
-
         </div>
     </div>
-    <!--div class="clearfix">
-        <span class="float-right">
-            <button type="submit" class="btn btn-success">Actualizar</button>
-        </span>
-    </div-->
+    <div></div>
+</div><br>
+<div class="row">
+    <div class="col-sm-8">
+        meee
+    </div>
+    <div class="col-sm-4" id="iva-Box">
+        <div class="input-group mb-3 input-group-sm">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Suma</span>
+            </div>
+            <input type="text" class="form-control" id="Tieps" readonly>
+        </div>
 
+        <div class="input-group mb-3 input-group-sm">
+            <div class="input-group-prepend">
+                <span class="input-group-text">I.V.A</span>
+            </div>
+            <input type="text" class="form-control" id="Tiva" readonly>
+        </div>
 
+        <div class="input-group mb-3 input-group-sm">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Total</span>
+            </div>
+            <input type="text" class="form-control" id="Tsaldo" readonly>
+        </div>
+
+    </div>
 </div>
 
 <!-- The Modal -->

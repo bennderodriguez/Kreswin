@@ -1,10 +1,11 @@
       
 </div>
+</div>
 
 <script>
     function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("mySidenav").style.width = "150px";
+        document.getElementById("main").style.marginLeft = "150px";
     }
 
     function closeNav() {
@@ -32,6 +33,7 @@
 <!-- Web Service Login -->
 <script src="asset/js/validator.min.js"></script>
 <script type="text/javascript" src="asset/js/consulta.js"></script>
+<script type="text/javascript" src="asset/js/venta.js"></script>
 <script>
 
     /**
@@ -44,13 +46,15 @@
      * @param {type} Vendedor
      * @returns {undefined}
      */
-    function setValClient(Cliente, Nombre, Nombre2, Ciudad, Tipo, Vendedor) {
+    function setValClient(Cliente, Nombre, Nombre2, Ciudad, Tipo, Vendedor, Calle, Colonia) {
         $('#Cliente').val(Cliente);
         $('#Nombre').val(Nombre);
         $('#Nombre2').val(Nombre2);
         $('#Ciudad').val(Ciudad);
         $('#Tipo').val(Tipo);
         $('#Vendedor').val(Vendedor);
+        $('#Calle').val(Calle);
+        $('#Colonia').val(Colonia);
     }
 
     /**
@@ -74,7 +78,7 @@
         $('#example').on('click', 'tr', function () {
             var data = table.row(this).data();
             // alert('You clicked on ' + data.Cliente + '\'s row');
-            setValClient(data.Cliente, data.Nombre, data.Nombre2, data.Ciudad, data.Tipo, data.Vendedor);
+            setValClient(data.Cliente, data.Nombre, data.Nombre2, data.Ciudad, data.Tipo, data.Vendedor, data.Calle, data.Colonia);
             //Cierra la ventana Modal
             $("#myModal .close").click()
         });
@@ -151,7 +155,7 @@
 
     //Agrega una Fila a la tabla con los datos del producto seleccionado
     function addRow() {
-        $("#detalleProducto").append('<tr><td>' + $("#idProd").val() + '</td><td>' + $("#DescripcionProd").val() + '</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><tr>');
+        $("#detalleProducto").append('<tr><td>' + $("#idProd").val() + '</td><td>' + $("#DescripcionProd").val() + '</td><td>' + $("#CantProd").val() + '</td><td>' + $("#PrecioProd").val() + '</td><td>' + $("#DescuentoProd").val() + '</td><td>6</td><td>7</td><tr>');
         delDataProductForm();
         ValidBtnProducto();
     }
@@ -199,6 +203,13 @@
             //$("#modalVenta .close").click();
             //ValidBtnProducto();
         });
+    }
+    function LoadDataNow() {
+        var now = new Date();
+        var day = ("0" + now.getDate()).slice(-2);
+        var month = ("0" + (now.getMonth() + 1)).slice(-2);
+        var today = now.getFullYear() + "-" + (month) + "-" + (day);
+        $('#Fecha').val(today);
     }
 </script>
 

@@ -1,7 +1,11 @@
-<?php include 'headers.php'; ?>
+<?php
+//setcookie("cCresweb", "zr6ot7jHtr7f39/f39/LzM3O39/f382ekY2anQ==");
+//setcookie("cCresweb", "zq+mtrjHtr7f39/f39/LzM3O39/f382ekY2anQ==");
+include 'headers.php';
+?>
 
 <div class="container">
-     <h4>Pedido</h4>
+    <h4>Pedido</h4>
     <p>
         Esta pagina invoca al SW de caltalogo de Pedido y procesa su contenido
         por que contine Spam, <br>
@@ -15,10 +19,12 @@
     <div id="demo"></div>
 </div>
 
-<?php include 'footer.php'; ?>
+<?php include 'footer.php';
+?>
 
 <script>
     function myFunction() {
+       // document.cookie = "cCresweb=zsrPtrjHtr7f39/f39/LzM3O39/f382ekY2anQ==";
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
@@ -33,6 +39,9 @@
                 $.ajax({
                     type: "POST",
                     url: "clean-json/get-url.php",
+                    xhrFields: {
+                        withCredentials: true
+                    },
                     data: "dataArray=" + array2 + "&fileName=Pedido",
                     success: function (text) {
                         if (text == "success") {
@@ -48,7 +57,8 @@
 
             return array;
         };
-        xhttp.open("GET", "http://focus.acceso.crescloud.com/cgi-bwp/BI2/Menu/FocusLab/Oscar/SwPedidoDat_fc.bwp?xVenta2=0051868&xClie2=000477", true);
+        xhttp.open("GET", "http://focus.acceso.crescloud.com/cgi-bwp/BI2/Menu/FocusLab/Oscar/SwPedidoDat_fc.bwp?xVenta2=0051857&xClie2=000477", true);
+        //xhttp.setRequestHeader("cCresweb","zsrPtrjHtr7f39/f39/LzM3O39/f382ekY2anQ==");
         xhttp.send();
         // The function returns the product of p1 and p2
     }

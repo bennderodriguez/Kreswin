@@ -1,3 +1,27 @@
-{"data" : [{"Pedido" : "0051868","Vendedor" : "A05","Sucursal" : " 0","Estatus" : "R","Precio" : "1","Descuento" : " 0.00","Tipo" : "004","Credito" : "   8","Ruta" : "05J","Destino" : "      ","Proyecto" : "      ","Dolares" : " ","Contado" : "S","Exportar" : " ","Nota1" : "1                                       ","Nota2" : "3                                       ","Nota3" : "3                                       ","Cliente" : "000477","Nombre" : "JAVIER MORALES MOTE                     ","Nombre2" : "MERCADO DE ABASTOS                      ","Calle" : "ALATRISTE # 10                          ","Colonia" : "CENTRO                                  ","Ciudad" : "73310 ZACATLAN, PUEBLA                        "}]
-
+{
+    "data": [{
+            "Pedido": "0051857",
+            "Vendedor": "A05",
+            "Sucursal": " 0",
+            "Estatus": "P",
+            "Precio": "1",
+            "Descuento": " 0.00",
+            "Tipo": "004",
+            "Credito": " 8",
+            "Ruta": "05J",
+            "Destino": " ",
+            "Proyecto": " ",
+            "Dolares": " ",
+            "Contado": " ",
+            "Exportar": " ",
+            "Nota1": "Nota1 ",
+            "Nota2": "Nota2 ",
+            "Nota3": "Nota2 ",
+            "Cliente": "000477",
+            "Nombre": "JAVIER MORALES MOTE ",
+            "Nombre2": "MERCADO DE ABASTOS ",
+            "Calle": "ALATRISTE # 10 ",
+            "Colonia": "CENTRO ",
+            "Ciudad": "73310 ZACATLAN, PUEBLA "
+        }]
 }
