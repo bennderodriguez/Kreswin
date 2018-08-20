@@ -34,6 +34,7 @@
 <script src="asset/js/validator.min.js"></script>
 <script type="text/javascript" src="asset/js/consulta.js"></script>
 <script type="text/javascript" src="asset/js/venta.js"></script>
+<script type="text/javascript" src="asset/js/pedido.js"></script>
 <script>
 
     /**

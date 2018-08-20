@@ -1,4 +1,5 @@
 <?php
+include_once '../resources/trace.php';
 
 // NAME
 //print_r($_POST);
@@ -20,3 +21,5 @@ $contexto = stream_context_create($opciones);
 //Flavio
 echo file_get_contents('http://focus.acceso.crescloud.com/cgi-bwp/BI2/Menu/FocusLab/Flavio/ec/swagregalin_fc.bwp?cVenta22=' . $_POST['cVenta22'] . '&xClie22=' . $_POST['xClie22'] . '&nCant22=' . $_POST['nCant22'] . '&PROD22=' . $_POST['PROD22'], false, $contexto);
 
+$Data = $_POST;
+print_r( $Data);

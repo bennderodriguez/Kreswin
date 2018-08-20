@@ -86,7 +86,7 @@
         }, {
             "Cliente": "000005",
             "Nombre": "MARTINA VILLEGAS VERA",
-            "Nombre2": "ABARROTES DIVINO NIÑO",
+            "Nombre2": "ABARROTES DIVINO NI�O",
             "Calle": "CALLE LIBERTAD S/N",
             "Colonia": "BARRIO DE GUADALUPE",
             "CP": "00000",
@@ -128,7 +128,7 @@
         }, {
             "Cliente": "000008",
             "Nombre": "GARCIA VILCHIS JOSEFINA",
-            "Nombre2": "EL PEQUEÑO COMPETIDOR",
+            "Nombre2": "EL PEQUE�O COMPETIDOR",
             "Calle": "PROL. LAZARO CARDENAS S/N",
             "Colonia": "JESUS MARIA",
             "CP": "50960",
@@ -211,7 +211,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000014",
-            "Nombre": "ARTURO GARDUÑO GOMORA",
+            "Nombre": "ARTURO GARDU�O GOMORA",
             "Nombre2": "ABARROTES LA HACIENDA",
             "Calle": "CARR. STA ANA NICHI S/N",
             "Colonia": "LA HACIENDA",
@@ -225,7 +225,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000015",
-            "Nombre": "GARDUÑO REBOLLO LUIS ENRIQUE",
+            "Nombre": "GARDU�O REBOLLO LUIS ENRIQUE",
             "Nombre2": "ABARROTES REBOLLO",
             "Calle": "BENITO JUAREZ S/N",
             "Colonia": "CENTRO",
@@ -233,7 +233,7 @@
             "Ciudad": "SANTA ANA NICHI",
             "Clasifica": "1",
             "Tipo": "004",
-            "Contacto": "LUIS ENRIQUE GARDUÑO",
+            "Contacto": "LUIS ENRIQUE GARDU�O",
             "Telefono": "",
             "Vendedor": "A01",
             "Nacion": "MEX"
@@ -337,7 +337,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000023",
-            "Nombre": "NAVARRETE YAÑEZ ARTURO",
+            "Nombre": "NAVARRETE YA�EZ ARTURO",
             "Nombre2": "",
             "Calle": "CALZADA DEL MOLINO # 44",
             "Colonia": " BONSHO",
@@ -435,7 +435,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000030",
-            "Nombre": "FELIPE RAMIREZ PATIÑO",
+            "Nombre": "FELIPE RAMIREZ PATI�O",
             "Nombre2": "ABARROTES GASTON",
             "Calle": "INT. MDO. MELCHOR OCAMPO LOCAL 123",
             "Colonia": "CENTRO",
@@ -841,7 +841,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000059",
-            "Nombre": "NUÑEZ MUÑOZ CARMELA",
+            "Nombre": "NU�EZ MU�OZ CARMELA",
             "Nombre2": "",
             "Calle": "ANILLO DE CIRCUNVALACION # 40 LOC 57-59",
             "Colonia": "LA MERCED BALBUENA",
@@ -995,7 +995,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000070",
-            "Nombre": "DISTRIBUIDORA COMERCIAL CASTAÑEDA, S.A.",
+            "Nombre": "DISTRIBUIDORA COMERCIAL CASTA�EDA, S.A.",
             "Nombre2": " DE C.V.",
             "Calle": "HEROICO COLEGIO MILITAR # 3",
             "Colonia": "GUADALUPE",
@@ -1121,7 +1121,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000079",
-            "Nombre": "ABRAHAM MARTINEZ MONTAÑO",
+            "Nombre": "ABRAHAM MARTINEZ MONTA�O",
             "Nombre2": "",
             "Calle": "AV. VELLE DE SANTIAGO # 810",
             "Colonia": "GUANAJUATO",
@@ -1297,7 +1297,7 @@
             "Ciudad": "CD. ALTAMIRANO",
             "Clasifica": "1",
             "Tipo": "004",
-            "Contacto": "CAMBIA PÓR EL 000805",
+            "Contacto": "CAMBIA P�R EL 000805",
             "Telefono": "",
             "Vendedor": "A07",
             "Nacion": "MEX"
@@ -1934,7 +1934,7 @@
         }, {
             "Cliente": "000137",
             "Nombre": "ZAVALA PEREZ MARIA LUISA",
-            "Nombre2": "DULCERIA EL GÜERO",
+            "Nombre2": "DULCERIA EL G�ERO",
             "Calle": "MELCHOR OCAMPO # 195",
             "Colonia": "CENTRO",
             "CP": "38600",
@@ -2325,7 +2325,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000165",
-            "Nombre": "GARCIA GARDUÑO JESUS",
+            "Nombre": "GARCIA GARDU�O JESUS",
             "Nombre2": "",
             "Calle": "AGUSTIN DE ITURBIDE # 15",
             "Colonia": "CENTRO",
@@ -2732,7 +2732,7 @@
         }, {
             "Cliente": "000194",
             "Nombre": "OSCAR DE JESUS CORNEJO ORTIZ",
-            "Nombre2": "DULCERIA LA PIÑATA",
+            "Nombre2": "DULCERIA LA PI�ATA",
             "Calle": "DEL HUERTO # 1",
             "Colonia": "CENTRO",
             "CP": "40000",
@@ -2789,7 +2789,7 @@
             "Cliente": "000198",
             "Nombre": "ABARROTES LA ESQUINITA",
             "Nombre2": "ANTONIA BADILLO HERNANDEZ",
-            "Calle": "PEñAFIEL ES. MINA S/N",
+            "Calle": "PE�AFIEL ES. MINA S/N",
             "Colonia": "CENTRO",
             "CP": "00000",
             "Ciudad": "ATOTONILCO EL GRANDE,  HGO",
@@ -2803,7 +2803,7 @@
             "Cliente": "000199",
             "Nombre": "AUGUSTO HERNANDEZ CHAPA",
             "Nombre2": "",
-            "Calle": "PEÑAFIEL # 22",
+            "Calle": "PE�AFIEL # 22",
             "Colonia": "CENTRO",
             "CP": "00000",
             "Ciudad": "ATOTONILCO EL GRANDE,  HGO",
@@ -2815,7 +2815,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000200",
-            "Nombre": "PAÑALERIA Y FARMACIA AHORRAMA",
+            "Nombre": "PA�ALERIA Y FARMACIA AHORRAMA",
             "Nombre2": "CANDIDO CALDERON LUNA",
             "Calle": "AV. JUAREZ # 50",
             "Colonia": "CENTRO",
@@ -2885,7 +2885,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000205",
-            "Nombre": "ABASTECEDORA DE PAÑALES EL SEQUESITO",
+            "Nombre": "ABASTECEDORA DE PA�ALES EL SEQUESITO",
             "Nombre2": "",
             "Calle": "HIDALGO # 5",
             "Colonia": "CENTRO",
@@ -2914,9 +2914,9 @@
         }, {
             "Cliente": "000207",
             "Nombre": "MARISOL ENRIQUEZ SAAVEDRA",
-            "Nombre2": "ABARROTES LA CAÑADA",
+            "Nombre2": "ABARROTES LA CA�ADA",
             "Calle": "CARR. LA MARQUEZA - HUIXQUILUCAN",
-            "Colonia": "LA CAÑADA",
+            "Colonia": "LA CA�ADA",
             "CP": "00000",
             "Ciudad": "HUIXQUILUCAN,  MEX",
             "Clasifica": "1",
@@ -3473,7 +3473,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000247",
-            "Nombre": "JESUS ANTONIO GARDUÑO AGUILAR",
+            "Nombre": "JESUS ANTONIO GARDU�O AGUILAR",
             "Nombre2": "DULCERIA  LULU",
             "Calle": "LERDO ESQ. BENEDICTO LOPEZ",
             "Colonia": "CENTRO",
@@ -3810,7 +3810,7 @@
         }, {
             "Cliente": "000271",
             "Nombre": "MIGUEL GARCIA DE PAZ",
-            "Nombre2": "ABARROTES AÑO NUEVO",
+            "Nombre2": "ABARROTES A�O NUEVO",
             "Calle": "PORFIRIO DIAZ # 1916",
             "Colonia": "CENTRO",
             "CP": "00000",
@@ -3837,7 +3837,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000273",
-            "Nombre": "JOSE LUIS SIERRA CABAÑAS",
+            "Nombre": "JOSE LUIS SIERRA CABA�AS",
             "Nombre2": "",
             "Calle": "CALLE DEL PANTEON # 82",
             "Colonia": "",
@@ -3977,7 +3977,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000283",
-            "Nombre": "MUCIÑO CAMACHO MARIA MARGARITA",
+            "Nombre": "MUCI�O CAMACHO MARIA MARGARITA",
             "Nombre2": "ABARROTERA LA BARATA",
             "Calle": "CARITINO MALDONADO # 29",
             "Colonia": "CENTRO",
@@ -4033,7 +4033,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000287",
-            "Nombre": "YAñEZ SOTO ISTALIA",
+            "Nombre": "YA�EZ SOTO ISTALIA",
             "Nombre2": "DULCERIA LA GIRALDA",
             "Calle": "CORREGIDORA # 53",
             "Colonia": "CENTRO",
@@ -4089,7 +4089,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000291",
-            "Nombre": "POZADA GARDUñO LIDIA",
+            "Nombre": "POZADA GARDU�O LIDIA",
             "Nombre2": "",
             "Calle": "ABASOLO # 19",
             "Colonia": "CENTRO",
@@ -4216,7 +4216,7 @@
         }, {
             "Cliente": "000300",
             "Nombre": "VARGAS GARCIA JAVIER",
-            "Nombre2": "DULCERIA EL NIÑO FELIZ",
+            "Nombre2": "DULCERIA EL NI�O FELIZ",
             "Calle": "REFORMA NORTE # 207-B",
             "Colonia": "CENTRO",
             "CP": "73080",
@@ -4426,7 +4426,7 @@
         }, {
             "Cliente": "000315",
             "Nombre": "ALFREDO MONROY LORENZO",
-            "Nombre2": "LONJA MERCANTIL EL GÜERO",
+            "Nombre2": "LONJA MERCANTIL EL G�ERO",
             "Calle": "AV. ZACAPEXCO # 3 LOCAL F",
             "Colonia": "SAN GERONIMO ZACAPEXCO",
             "CP": "00000",
@@ -4439,7 +4439,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000316",
-            "Nombre": "CREMERIA Y ABARROTES LA PEÑA",
+            "Nombre": "CREMERIA Y ABARROTES LA PE�A",
             "Nombre2": "",
             "Calle": "VICENTE BARRERA # 2",
             "Colonia": "CENTRO",
@@ -4553,7 +4553,7 @@
             "Cliente": "000324",
             "Nombre": "ABARROTES Y SEMILLAS EL CORAZON DE UNA",
             "Nombre2": "DAMA, S.A. DE C.V.",
-            "Calle": "1º DE MAYO OTE. # 312",
+            "Calle": "1� DE MAYO OTE. # 312",
             "Colonia": "CENTRO",
             "CP": "43600",
             "Ciudad": "TULANCINGO",
@@ -4567,7 +4567,7 @@
             "Cliente": "000325",
             "Nombre": "IBARRA MIRANDA EVA",
             "Nombre2": "",
-            "Calle": "1º DE MAYO ORIENTE # 325",
+            "Calle": "1� DE MAYO ORIENTE # 325",
             "Colonia": "CENTRO",
             "CP": "43600",
             "Ciudad": "TULANCINGO DE BRAVO",
@@ -5000,7 +5000,7 @@
         }, {
             "Cliente": "000356",
             "Nombre": "JAZMIN GUADARRAMA",
-            "Nombre2": "PAÑALES Y PERFUMERIA",
+            "Nombre2": "PA�ALES Y PERFUMERIA",
             "Calle": "AV. MORELOS # 1506",
             "Colonia": "CENTRO",
             "CP": "00000",
@@ -5223,7 +5223,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000372",
-            "Nombre": "NUÑEZ CERON ROBERTO DE JESUS",
+            "Nombre": "NU�EZ CERON ROBERTO DE JESUS",
             "Nombre2": "",
             "Calle": "ESCOBEDO # 7-B",
             "Colonia": "CENTRO",
@@ -5508,7 +5508,7 @@
             "Calle": "MELCHOR OCAMPO # 10",
             "Colonia": "CENTRO",
             "CP": "00000",
-            "Ciudad": "ZACUALPÀN,  MEX",
+            "Ciudad": "ZACUALP�N,  MEX",
             "Clasifica": "1",
             "Tipo": "004",
             "Contacto": "CONCEPCION ALVA",
@@ -5657,7 +5657,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000403",
-            "Nombre": "JUAN CARLOS GARDUÑO",
+            "Nombre": "JUAN CARLOS GARDU�O",
             "Nombre2": "ABARROTERA LA HACIENDA",
             "Calle": "CARR. YEVUGIVI /STA ANA NICHI # 106",
             "Colonia": "HACIENDA MIXTEPEC",
@@ -6077,7 +6077,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000433",
-            "Nombre": "JUAN FRANCISCO ZUÑIGA SERRANO",
+            "Nombre": "JUAN FRANCISCO ZU�IGA SERRANO",
             "Nombre2": "",
             "Calle": "NICOLAS BRAVO # 2",
             "Colonia": "CENTRO",
@@ -6931,9 +6931,9 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000494",
-            "Nombre": "ISIDORA BALDERRAMA ACUÑA",
+            "Nombre": "ISIDORA BALDERRAMA ACU�A",
             "Nombre2": "ABARROTES HERNANDEZ",
-            "Calle": "PEÑAFIEL CON MINA S/N",
+            "Calle": "PE�AFIEL CON MINA S/N",
             "Colonia": "CENTRO",
             "CP": "00000",
             "Ciudad": "ATOTONILCO,     HGO",
@@ -7342,7 +7342,7 @@
             "Calle": "INT MDO R.LEYVA LOC # 91",
             "Colonia": "CAMINOS",
             "CP": "00000",
-            "Ciudad": "CHILPàNCINGO,  GRO",
+            "Ciudad": "CHILP�NCINGO,  GRO",
             "Clasifica": "1",
             "Tipo": "004",
             "Contacto": ".",
@@ -7423,7 +7423,7 @@
             "Cliente": "000529",
             "Nombre": "EDGARDO ARELLANO CUEVAS",
             "Nombre2": "ABARROTES EL CINE",
-            "Calle": "NIÑO ARTILLERO S/N",
+            "Calle": "NI�O ARTILLERO S/N",
             "Colonia": "CENTRO (ATRAS DEL MERCADO MUNICIPAL)",
             "CP": "00000",
             "Ciudad": "MAZATEPEC",
@@ -7478,7 +7478,7 @@
         }, {
             "Cliente": "000533",
             "Nombre": "BRAULIO CRUZ",
-            "Nombre2": "GORDITAS DOÑA ESPERANZA",
+            "Nombre2": "GORDITAS DO�A ESPERANZA",
             "Calle": "5 DE MAYO NORTE # 22",
             "Colonia": "CENTRO  (JUNTO AL MAS-MAS)",
             "CP": "00000",
@@ -7883,7 +7883,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000562",
-            "Nombre": "JORGE COLIN GARDUñO",
+            "Nombre": "JORGE COLIN GARDU�O",
             "Nombre2": "ABARROTES JORGIN",
             "Calle": "AGUSTIN MILLAN S/N",
             "Colonia": "SANTA ANA NICHI",
@@ -8331,7 +8331,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000594",
-            "Nombre": "MARIBEL ORDOÑEZ",
+            "Nombre": "MARIBEL ORDO�EZ",
             "Nombre2": "",
             "Calle": "INT MERCADO DORADO # 95",
             "Colonia": "",
@@ -8339,7 +8339,7 @@
             "Ciudad": "CELAYA,  GTO",
             "Clasifica": "1",
             "Tipo": "004",
-            "Contacto": "MARIBEL ORDOÑEZ",
+            "Contacto": "MARIBEL ORDO�EZ",
             "Telefono": "",
             "Vendedor": "A15",
             "Nacion": "MEX"
@@ -8374,7 +8374,7 @@
         }, {
             "Cliente": "000597",
             "Nombre": "JAIME ZAVALA DIANA GABRIELA",
-            "Nombre2": "DULCERIA EL  GÜERO",
+            "Nombre2": "DULCERIA EL  G�ERO",
             "Calle": "MELCHOR OCAMPO # 195",
             "Colonia": "CENTRO",
             "CP": "38800",
@@ -9507,7 +9507,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000678",
-            "Nombre": "PIÑA CORONA MARCELA MARIA ELENA",
+            "Nombre": "PI�A CORONA MARCELA MARIA ELENA",
             "Nombre2": "",
             "Calle": "JUAREZ NORTE # 5",
             "Colonia": "BO. SAN PEDRO Y SAN PABLO",
@@ -9745,8 +9745,8 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000695",
-            "Nombre": "HUGO GARCIA GARDUñO",
-            "Nombre2": "ABARROTES GARDUñO",
+            "Nombre": "HUGO GARCIA GARDU�O",
+            "Nombre2": "ABARROTES GARDU�O",
             "Calle": "CARR FEDERAL TOLUCA-ZITACUARO KM 52.5",
             "Colonia": "EL JACAL    (JUNTO A UNA ROSTICERIA)",
             "CP": "00000",
@@ -10111,7 +10111,7 @@
             "Cliente": "000721",
             "Nombre": "FRANCISCO JAVIER BATAZ CARBAJAL",
             "Nombre2": "ABARROTES BATAZ",
-            "Calle": "ZACARIAS ZUÑIGA # 18",
+            "Calle": "ZACARIAS ZU�IGA # 18",
             "Colonia": "CENTRO",
             "CP": "00000",
             "Ciudad": "COYUCA DE BENITEZ, GRO",
@@ -10151,7 +10151,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000724",
-            "Nombre": "MUÑOZ GARCIA MANUEL",
+            "Nombre": "MU�OZ GARCIA MANUEL",
             "Nombre2": "ABARROTES LA VIRGEN",
             "Calle": "SALIDA A CD HIDALGO # 3069",
             "Colonia": "SAN MIGUEL",
@@ -10347,7 +10347,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000738",
-            "Nombre": "CLAUDIA MONTECILLOS PIÑEIRO",
+            "Nombre": "CLAUDIA MONTECILLOS PI�EIRO",
             "Nombre2": "",
             "Calle": "ALLENDE # 28",
             "Colonia": "",
@@ -10823,7 +10823,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000772",
-            "Nombre": "LUIS ANGEL NUñEZ LARA",
+            "Nombre": "LUIS ANGEL NU�EZ LARA",
             "Nombre2": "DULCERIA LUCAS",
             "Calle": "ANTONIO DEL CASTILLO # 102-B ENTRE",
             "Colonia": "L. CARDENAS  ESQ CJON ALLENDE/CENTRO",
@@ -10840,7 +10840,7 @@
             "Nombre": "MARIA DE LA PAZ MALDONADO DIAZ BARRIGA",
             "Nombre2": "DULCERIA MAGFIESTAS",
             "Calle": "FCO. I. MADERO # 5086-A",
-            "Colonia": "NIÑO ARTILLERO",
+            "Colonia": "NI�O ARTILLERO",
             "CP": "00000",
             "Ciudad": "MORELIA, MICH",
             "Clasifica": "1",
@@ -10908,7 +10908,7 @@
         }, {
             "Cliente": "000778",
             "Nombre": "PERALTA PORTILLO JUAN CARLOS",
-            "Nombre2": "VINOS Y LICORES LA VIÑA",
+            "Nombre2": "VINOS Y LICORES LA VI�A",
             "Calle": "AV. INSURGENTES # 9",
             "Colonia": "BENITO JUAREZ",
             "CP": "39010",
@@ -10980,7 +10980,7 @@
             "Nombre": "GUTIERREZ GONZALEZ ANA LAURA",
             "Nombre2": "",
             "Calle": "MAXIMINO RUIZ FLORES # 3",
-            "Colonia": "FELIPE UREÑA",
+            "Colonia": "FELIPE URE�A",
             "CP": "50450",
             "Ciudad": "ATLACOMULCO DE FABELA",
             "Clasifica": "1",
@@ -11021,7 +11021,7 @@
             "Cliente": "000786",
             "Nombre": "ERNESTO SILVA ISLAS",
             "Nombre2": "",
-            "Calle": "NIÑO PERDIDO # 1",
+            "Calle": "NI�O PERDIDO # 1",
             "Colonia": "FRENTE A LA IGLESIA",
             "CP": "00000",
             "Ciudad": "SAN JUAN TIZAHUAPAN, HGO.",
@@ -11215,7 +11215,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000800",
-            "Nombre": "DANIEL RICAÑO ANDRADE",
+            "Nombre": "DANIEL RICA�O ANDRADE",
             "Nombre2": "",
             "Calle": "BARTOLOME DE MEDINA # 105",
             "Colonia": "CENTRO",
@@ -11223,7 +11223,7 @@
             "Ciudad": "PACHUCA, HIDALGO",
             "Clasifica": "1",
             "Tipo": "004",
-            "Contacto": "daniel ricaño",
+            "Contacto": "daniel rica�o",
             "Telefono": "",
             "Vendedor": "A05",
             "Nacion": "MEX"
@@ -11413,7 +11413,7 @@
             "Cliente": "000814",
             "Nombre": "J. HUMBERTO GARCIA RIVERA",
             "Nombre2": "",
-            "Calle": "OTILIO MONTAÑO # 220-A",
+            "Calle": "OTILIO MONTA�O # 220-A",
             "Colonia": "EMILIANO ZAPATA",
             "CP": "",
             "Ciudad": "CELAYA,  GTO.",
@@ -11888,7 +11888,7 @@
         }, {
             "Cliente": "000869",
             "Nombre": "NELIDA MORENO MORENO",
-            "Nombre2": "DULCERIA FELIZ CUMPLEAÑOS",
+            "Nombre2": "DULCERIA FELIZ CUMPLEA�OS",
             "Calle": "AV. JUAREZ # 1-B",
             "Colonia": "CENTRO (JUNTO AL MEXIQUENSE)",
             "CP": "61100",
@@ -12153,7 +12153,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000888",
-            "Nombre": "CREMERIA LA MONTAñA DE VILLA",
+            "Nombre": "CREMERIA LA MONTA�A DE VILLA",
             "Nombre2": "",
             "Calle": "LAZARO CARDENAS S/N",
             "Colonia": "CENTRO",
@@ -12223,7 +12223,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000893",
-            "Nombre": "LOPEZ MUÑOZ VICTOR HUGO",
+            "Nombre": "LOPEZ MU�OZ VICTOR HUGO",
             "Nombre2": "",
             "Calle": "AV. DEL TRABAJO # 300-B",
             "Colonia": "ZONA CENTRO",
@@ -12450,7 +12450,7 @@
             "Nombre": "GREGORIO MENA AVILES",
             "Nombre2": "MISCELANEA",
             "Calle": "LUIS MONTES DE OCA # 5",
-            "Colonia": "CENTRO  (FTE A DULCERIA DANY´S)",
+            "Colonia": "CENTRO  (FTE A DULCERIA DANY�S)",
             "CP": "",
             "Ciudad": "TAXCO,  GRO.",
             "Clasifica": "1",
@@ -12531,7 +12531,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000915",
-            "Nombre": "DULCERIA EL GÜERO",
+            "Nombre": "DULCERIA EL G�ERO",
             "Nombre2": "",
             "Calle": "FELIPE ANGELES # 309-A",
             "Colonia": "MERCADO DE ABASTOS",
@@ -12546,7 +12546,7 @@
         }, {
             "Cliente": "000916",
             "Nombre": "DULCERIA SANDY",
-            "Nombre2": "JOSE ALVARO MUÑOZ ZARCO",
+            "Nombre2": "JOSE ALVARO MU�OZ ZARCO",
             "Calle": "MORELOS # 6-B ESQ MELCHOR OCAMPO",
             "Colonia": "CENTRO",
             "CP": "",
@@ -12657,7 +12657,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000924",
-            "Nombre": "SALOMON TAPIA NUÑEZ",
+            "Nombre": "SALOMON TAPIA NU�EZ",
             "Nombre2": "FARMACIA",
             "Calle": "AV. LAZARO CARDENAS # 613",
             "Colonia": "CENTRO",
@@ -12770,7 +12770,7 @@
         }, {
             "Cliente": "000932",
             "Nombre": "ALVAREZ GARCIA MARI CARMEN",
-            "Nombre2": "EL PEQUEÑO COMPETIDOR",
+            "Nombre2": "EL PEQUE�O COMPETIDOR",
             "Calle": "PROL. LAZARO CARDENAS S/N",
             "Colonia": "JESUS MARIA",
             "CP": "50960",
@@ -12856,7 +12856,7 @@
             "Nombre": "HECTOR MANUEL CERVIN ACOSTA",
             "Nombre2": "DULCERIA MAC FIESTA",
             "Calle": "AV. MADERO PTE. $ 5086-A",
-            "Colonia": "NIÑO ARTILLERO",
+            "Colonia": "NI�O ARTILLERO",
             "CP": "",
             "Ciudad": "MORELIA, MICH.",
             "Clasifica": "1",
@@ -13008,7 +13008,7 @@
         }, {
             "Cliente": "000949",
             "Nombre": "PAUL MANUEL QUIROZ MORENO",
-            "Nombre2": "PLASTICOS LA GüERA",
+            "Nombre2": "PLASTICOS LA G�ERA",
             "Calle": "JOSEFA ORTIZ DE DOMINGUEZ # 304",
             "Colonia": "MEXICALTZINGO",
             "CP": "",
@@ -13161,7 +13161,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000960",
-            "Nombre": "EDUARDO YAñEZ",
+            "Nombre": "EDUARDO YA�EZ",
             "Nombre2": "DULCERIA CARITAS",
             "Calle": "AV. MORELOS # 47",
             "Colonia": "CENTRO",
@@ -13217,7 +13217,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000964",
-            "Nombre": "MARIELA GUTIERREZ NUÑEZ",
+            "Nombre": "MARIELA GUTIERREZ NU�EZ",
             "Nombre2": "CREMERIA GUTIERREZ",
             "Calle": "INT MERCADO R. LEYVA LOC # 15 NAVE 3",
             "Colonia": "CAMINOS",
@@ -13231,9 +13231,9 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "000965",
-            "Nombre": "DISTRIBUIDORA ABARROTERA NUEVA ESPAÑA,",
+            "Nombre": "DISTRIBUIDORA ABARROTERA NUEVA ESPA�A,",
             "Nombre2": "S.A. DE C.V.",
-            "Calle": "PERIFERICO NUEVA ESPAÑA # 1412",
+            "Calle": "PERIFERICO NUEVA ESPA�A # 1412",
             "Colonia": "EL MIRADOR DE PUNHUATO",
             "CP": "58249",
             "Ciudad": "MORELIA",
@@ -14143,7 +14143,7 @@
             "Cliente": "005038",
             "Nombre": "GABRIEL MATIAS DE LA CRUZ",
             "Nombre2": "",
-            "Calle": "PUERTA # 10 N° 124 MERCADO DEL DULCE",
+            "Calle": "PUERTA # 10 N� 124 MERCADO DEL DULCE",
             "Colonia": "LA MERCED",
             "CP": "00000",
             "Ciudad": "CD. DE MEXICO",
@@ -14395,7 +14395,7 @@
             "Cliente": "005056",
             "Nombre": "REYNA HERNANDEZ CLEMENTE",
             "Nombre2": "",
-            "Calle": "DR LUIS CASTAÑEDA ESQ 16 DE SEPTIEMBRE",
+            "Calle": "DR LUIS CASTA�EDA ESQ 16 DE SEPTIEMBRE",
             "Colonia": "CENTRO (FRENTE A LA IGLESIA)",
             "CP": "00000",
             "Ciudad": "ACAMBAY, MEX",
@@ -14883,7 +14883,7 @@
             "Nacion": "MEX"
         }, {
             "Cliente": "005091",
-            "Nombre": "J. CRUZ JUVENAL SANTIBAÑEZ BURGOS",
+            "Nombre": "J. CRUZ JUVENAL SANTIBA�EZ BURGOS",
             "Nombre2": "ABARROTES LOS CUATES",
             "Calle": "AV. DEL SOL S/N EL DIVISADERO",
             "Colonia": "CENTRO",

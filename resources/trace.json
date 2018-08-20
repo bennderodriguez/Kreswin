@@ -1,0 +1,1765 @@
+[{
+        "DATE": "2018-08-20 08:16:57pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534789017,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 08:17:26pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534789046,
+        "DATA": {
+            "p": "yo"
+        },
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 08:17:41pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534789061,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 08:17:49pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534789069,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 08:17:56pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534789076,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 08:20:40pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534789240,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 08:20:56pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "POST",
+        "REQUEST_TIME": 1534789256,
+        "DATA": {
+            "cVenta22": "0051995",
+            "xClie22": "000002",
+            "nCant22": "",
+            "PROD22": ""
+        },
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Content-Length": "48",
+            "Accept": "*\/*",
+            "Origin": "http:\/\/localhost",
+            "X-Requested-With": "XMLHttpRequest",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Content-Type": "application\/x-www-form-urlencoded; charset=UTF-8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "cCresweb=zq%2BmtrjHtr7f39%2Ff39%2FLzM3O39%2Ff382ekY2anQ%3D%3D; _y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 08:22:51pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534789371,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 08:23:03pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "POST",
+        "REQUEST_TIME": 1534789383,
+        "DATA": {
+            "cVenta22": "0051995",
+            "xClie22": "000002",
+            "nCant22": "",
+            "PROD22": ""
+        },
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Content-Length": "48",
+            "Accept": "*\/*",
+            "Origin": "http:\/\/localhost",
+            "X-Requested-With": "XMLHttpRequest",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Content-Type": "application\/x-www-form-urlencoded; charset=UTF-8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "cCresweb=zq%2BmtrjHtr7f39%2Ff39%2FLzM3O39%2Ff382ekY2anQ%3D%3D; _y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 08:24:57pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534789497,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 08:25:08pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "POST",
+        "REQUEST_TIME": 1534789508,
+        "DATA": {
+            "cVenta22": "0051995",
+            "xClie22": "000001",
+            "nCant22": "",
+            "PROD22": ""
+        },
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Content-Length": "48",
+            "Accept": "*\/*",
+            "Origin": "http:\/\/localhost",
+            "X-Requested-With": "XMLHttpRequest",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Content-Type": "application\/x-www-form-urlencoded; charset=UTF-8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "cCresweb=zq%2BmtrjHtr7f39%2Ff39%2FLzM3O39%2Ff382ekY2anQ%3D%3D; _y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 08:26:03pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "POST",
+        "REQUEST_TIME": 1534789563,
+        "DATA": {
+            "cVenta22": "0051995",
+            "xClie22": "000001",
+            "nCant22": "",
+            "PROD22": ""
+        },
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Content-Length": "48",
+            "Accept": "*\/*",
+            "Origin": "http:\/\/localhost",
+            "X-Requested-With": "XMLHttpRequest",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Content-Type": "application\/x-www-form-urlencoded; charset=UTF-8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "cCresweb=zq%2BmtrjHtr7f39%2Ff39%2FLzM3O39%2Ff382ekY2anQ%3D%3D; _y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 08:27:01pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534789621,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 08:27:18pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "POST",
+        "REQUEST_TIME": 1534789638,
+        "DATA": {
+            "cVenta22": "0051995",
+            "xClie22": "000001",
+            "nCant22": "",
+            "PROD22": ""
+        },
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Content-Length": "48",
+            "Accept": "*\/*",
+            "Origin": "http:\/\/localhost",
+            "X-Requested-With": "XMLHttpRequest",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Content-Type": "application\/x-www-form-urlencoded; charset=UTF-8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "cCresweb=zq%2BmtrjHtr7f39%2Ff39%2FLzM3O39%2Ff382ekY2anQ%3D%3D; _y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 08:30:21pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534789821,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 08:30:25pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534789825,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 08:30:45pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534789845,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 08:30:57pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "POST",
+        "REQUEST_TIME": 1534789857,
+        "DATA": {
+            "cVenta22": "0051995",
+            "xClie22": "000001",
+            "nCant22": "",
+            "PROD22": ""
+        },
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Content-Length": "48",
+            "Accept": "*\/*",
+            "Origin": "http:\/\/localhost",
+            "X-Requested-With": "XMLHttpRequest",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Content-Type": "application\/x-www-form-urlencoded; charset=UTF-8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "cCresweb=zq%2BmtrjHtr7f39%2Ff39%2FLzM3O39%2Ff382ekY2anQ%3D%3D; _y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 08:32:47pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534789967,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 08:33:18pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "POST",
+        "REQUEST_TIME": 1534789998,
+        "DATA": {
+            "cVenta22": "0051995",
+            "xClie22": "000005",
+            "nCant22": "",
+            "PROD22": ""
+        },
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Content-Length": "48",
+            "Accept": "*\/*",
+            "Origin": "http:\/\/localhost",
+            "X-Requested-With": "XMLHttpRequest",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Content-Type": "application\/x-www-form-urlencoded; charset=UTF-8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "cCresweb=zq%2BmtrjHtr7f39%2Ff39%2FLzM3O39%2Ff382ekY2anQ%3D%3D; _y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 08:34:22pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "POST",
+        "REQUEST_TIME": 1534790062,
+        "DATA": {
+            "cVenta22": "0051995",
+            "xClie22": "000005",
+            "nCant22": "",
+            "PROD22": ""
+        },
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Content-Length": "48",
+            "Accept": "*\/*",
+            "Origin": "http:\/\/localhost",
+            "X-Requested-With": "XMLHttpRequest",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Content-Type": "application\/x-www-form-urlencoded; charset=UTF-8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "cCresweb=zq%2BmtrjHtr7f39%2Ff39%2FLzM3O39%2Ff382ekY2anQ%3D%3D; _y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 08:34:47pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "POST",
+        "REQUEST_TIME": 1534790087,
+        "DATA": {
+            "cVenta22": "0051995",
+            "xClie22": "000005",
+            "nCant22": "",
+            "PROD22": ""
+        },
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Content-Length": "48",
+            "Accept": "*\/*",
+            "Origin": "http:\/\/localhost",
+            "X-Requested-With": "XMLHttpRequest",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Content-Type": "application\/x-www-form-urlencoded; charset=UTF-8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "cCresweb=zq%2BmtrjHtr7f39%2Ff39%2FLzM3O39%2Ff382ekY2anQ%3D%3D; _y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:11:30pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534795890,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:16:12pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534796172,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:16:41pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534796201,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:17:13pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534796233,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:17:38pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534796258,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:18:14pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534796294,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:18:18pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534796298,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:19:06pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534796346,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:19:25pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534796365,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:20:25pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "POST",
+        "REQUEST_TIME": 1534796425,
+        "DATA": {
+            "cVenta22": "0051995",
+            "xClie22": "000007",
+            "nCant22": "",
+            "PROD22": ""
+        },
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Content-Length": "48",
+            "Accept": "*\/*",
+            "Origin": "http:\/\/localhost",
+            "X-Requested-With": "XMLHttpRequest",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Content-Type": "application\/x-www-form-urlencoded; charset=UTF-8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "cCresweb=zq%2BmtrjHtr7f39%2Ff39%2FLzM3O39%2Ff382ekY2anQ%3D%3D; _y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:23:32pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534796612,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:23:34pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534796614,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:24:26pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534796666,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:24:54pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "POST",
+        "REQUEST_TIME": 1534796694,
+        "DATA": {
+            "cVenta22": "0051995",
+            "xClie22": "000007",
+            "nCant22": "",
+            "PROD22": ""
+        },
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Content-Length": "48",
+            "Accept": "*\/*",
+            "Origin": "http:\/\/localhost",
+            "X-Requested-With": "XMLHttpRequest",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Content-Type": "application\/x-www-form-urlencoded; charset=UTF-8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "cCresweb=zq%2BmtrjHtr7f39%2Ff39%2FLzM3O39%2Ff382ekY2anQ%3D%3D; _y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:28:05pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534796885,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:28:08pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534796888,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:28:29pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "POST",
+        "REQUEST_TIME": 1534796909,
+        "DATA": {
+            "cVenta22": "0051995",
+            "xClie22": "000002",
+            "nCant22": "1",
+            "PROD22": "004            "
+        },
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Content-Length": "64",
+            "Accept": "*\/*",
+            "Origin": "http:\/\/localhost",
+            "X-Requested-With": "XMLHttpRequest",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Content-Type": "application\/x-www-form-urlencoded; charset=UTF-8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "cCresweb=zq%2BmtrjHtr7f39%2Ff39%2FLzM3O39%2Ff382ekY2anQ%3D%3D; _y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:30:59pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "POST",
+        "REQUEST_TIME": 1534797059,
+        "DATA": {
+            "cVenta22": "0051995",
+            "xClie22": "000002",
+            "nCant22": "1",
+            "PROD22": "004            "
+        },
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Content-Length": "64",
+            "Accept": "*\/*",
+            "Origin": "http:\/\/localhost",
+            "X-Requested-With": "XMLHttpRequest",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Content-Type": "application\/x-www-form-urlencoded; charset=UTF-8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "cCresweb=zq%2BmtrjHtr7f39%2Ff39%2FLzM3O39%2Ff382ekY2anQ%3D%3D; _y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:31:01pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534797061,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:31:09pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534797069,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:31:29pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "POST",
+        "REQUEST_TIME": 1534797089,
+        "DATA": {
+            "cVenta22": "0051995",
+            "xClie22": "000003",
+            "nCant22": "1",
+            "PROD22": "004            "
+        },
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Content-Length": "64",
+            "Accept": "*\/*",
+            "Origin": "http:\/\/localhost",
+            "X-Requested-With": "XMLHttpRequest",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Content-Type": "application\/x-www-form-urlencoded; charset=UTF-8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "cCresweb=zq%2BmtrjHtr7f39%2Ff39%2FLzM3O39%2Ff382ekY2anQ%3D%3D; _y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:48:58pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534798138,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 10:49:34pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534798174,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 11:10:59pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534799459,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 11:11:28pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534799488,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 11:12:18pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534799538,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 11:13:05pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534799585,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 11:18:20pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534799900,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 11:20:28pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534800028,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 11:22:07pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534800127,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 11:23:39pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534800219,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 11:23:53pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534800233,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 11:54:10pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534802050,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-20 11:56:12pm",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534802172,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:02:27am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534802547,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/index.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:02:31am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534802551,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:03:59am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534802639,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:04:33am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534802673,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:06:14am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534802774,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:06:20am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534802780,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:06:31am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534802791,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:07:08am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534802828,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:07:11am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534802831,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:07:34am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534802854,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:07:35am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534802855,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:08:11am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534802891,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:09:23am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534802963,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:10:37am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534803037,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:10:42am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534803042,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:11:16am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534803076,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:12:01am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534803121,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:12:43am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534803163,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:12:46am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534803166,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:13:18am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534803198,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:14:55am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534803295,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:15:46am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534803346,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:26:27am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534803987,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:26:31am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534803991,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:27:29am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534804049,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:29:03am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534804143,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:29:06am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534804146,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:34:52am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534804492,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:35:47am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534804547,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:35:49am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534804549,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:37:49am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534804669,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:45:52am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534805152,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:45:55am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534805155,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:45:58am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534805158,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:47:42am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534805262,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    }, {
+        "DATE": "2018-08-21 12:50:10am",
+        "REMOTE_ADDR": "::1",
+        "REQUEST_METHOD": "GET",
+        "REQUEST_TIME": 1534805410,
+        "DATA": [],
+        "HEADER": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+            "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+            "Referer": "http:\/\/localhost\/Kreswin\/venta.php",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Cookie": "_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"
+        }
+    },{"DATE":"2018-08-21 12:53:46am","REMOTE_ADDR":"::1","REQUEST_METHOD":"GET","REQUEST_TIME":1534805626,"DATA":[],"HEADER":{"Host":"localhost","Connection":"keep-alive","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8","Referer":"http:\/\/localhost\/Kreswin\/pedido.php","Accept-Encoding":"gzip, deflate, br","Accept-Language":"es-ES,es;q=0.9,en;q=0.8","Cookie":"_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"}},{"DATE":"2018-08-21 12:56:11am","REMOTE_ADDR":"::1","REQUEST_METHOD":"GET","REQUEST_TIME":1534805771,"DATA":[],"HEADER":{"Host":"localhost","Connection":"keep-alive","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8","Referer":"http:\/\/localhost\/Kreswin\/venta.php","Accept-Encoding":"gzip, deflate, br","Accept-Language":"es-ES,es;q=0.9,en;q=0.8","Cookie":"_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"}},{"DATE":"2018-08-21 12:56:36am","REMOTE_ADDR":"::1","REQUEST_METHOD":"GET","REQUEST_TIME":1534805796,"DATA":[],"HEADER":{"Host":"localhost","Connection":"keep-alive","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8","Accept-Encoding":"gzip, deflate, br","Accept-Language":"es-ES,es;q=0.9,en;q=0.8","Cookie":"_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"}},{"DATE":"2018-08-21 12:56:42am","REMOTE_ADDR":"::1","REQUEST_METHOD":"GET","REQUEST_TIME":1534805802,"DATA":[],"HEADER":{"Host":"localhost","Connection":"keep-alive","Cache-Control":"max-age=0","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8","Accept-Encoding":"gzip, deflate, br","Accept-Language":"es-ES,es;q=0.9,en;q=0.8","Cookie":"_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"}},{"DATE":"2018-08-21 01:01:30am","REMOTE_ADDR":"::1","REQUEST_METHOD":"GET","REQUEST_TIME":1534806090,"DATA":[],"HEADER":{"Host":"localhost","Connection":"keep-alive","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8","Referer":"http:\/\/localhost\/Kreswin\/consulta.php","Accept-Encoding":"gzip, deflate, br","Accept-Language":"es-ES,es;q=0.9,en;q=0.8","Cookie":"_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"}},{"DATE":"2018-08-21 01:01:34am","REMOTE_ADDR":"::1","REQUEST_METHOD":"GET","REQUEST_TIME":1534806094,"DATA":[],"HEADER":{"Host":"localhost","Connection":"keep-alive","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8","Referer":"http:\/\/localhost\/Kreswin\/venta.php","Accept-Encoding":"gzip, deflate, br","Accept-Language":"es-ES,es;q=0.9,en;q=0.8","Cookie":"_y=98373ADC-98D6-44C1-74FF; _shopify_y=98373ADC-98D6-44C1-74FF; _shopify_fs=2018-08-02T18%3A08%3A23.254Z; _ga=GA1.1.1490474608.1533597152"}}]

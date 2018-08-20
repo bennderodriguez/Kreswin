@@ -49,7 +49,7 @@
 
             return array;
         };
-        xhttp.open("GET", "http://focus.acceso.crescloud.com/cgi-bwp/expert/Check3.bwp?cVenta2=0051869", true);
+        xhttp.open("GET", "http://focus.acceso.crescloud.com/cgi-bwp/expert/Check3.bwp?cVenta2=0051995", true);
         xhttp.send();
         // The function returns the product of p1 and p2
     }

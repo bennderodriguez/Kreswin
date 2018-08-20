@@ -48,7 +48,7 @@
 
             return array;
         };
-        xhttp.open("GET", "http://focus.acceso.crescloud.com/cgi-bwp/BI2/Menu/FocusLab/Berna/SWCCliente.bwp", true);
+        xhttp.open("GET", "getJson/getCliente.php", true);
         xhttp.send();
         // The function returns the product of p1 and p2
     }

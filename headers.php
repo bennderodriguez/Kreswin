@@ -1,3 +1,10 @@
+<?php
+/**
+ * implementa trace
+ */
+include_once './resources/trace.php';
+
+?>
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -16,26 +23,27 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="asset/css/bootstrap.min.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Sniglet:400,500,700|Metric-Light:400,900" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
-
-
         <!-- sviAxa personalite CSS -->
         <link rel="stylesheet" href="asset/css/sviaxa.css">
         <link rel="stylesheet" href="asset/css/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+        <link href="https://fonts.googleapis.com/css?family=Sniglet:400,500,700|Metric-Light:400,900" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+
 
         <!-- JQuery Export datatable csv,excel pdf -->
         <link rel="stylesheet" href="asset/css/jquery.dataTables.min.css">
         <link rel="stylesheet" href="asset/css/buttons.dataTables.min.css">
     </head>
     <body>
+        <div class="loader"></div>
         <div id="mySidenav" class="sidenav" style="margin-top:40px">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <a href="index.php">Registrar</a>
+            <a href="#">Modificar</a>
+            <a href="#">Eliminar</a>
+            <a href="pedido.php">Pedido</a>
+            <a href="venta.php">Venta</a>
+            <a href="#">Salir</a>
         </div>
 
         <div id="main">

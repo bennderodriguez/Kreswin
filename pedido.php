@@ -1,31 +1,37 @@
 <?php include 'headers.php'; ?>
 
 
-<form class="form-horizontal" id="RealizarVenta" role="form" autocomplete="off"><br>
-    <center><h5> Venta <span id="NumVent"></span> </h5></center>
+<form class="form-horizontal" id="crearPedido" role="form" autocomplete="off"><br>
+    <center><h5> Pedido <span id="NumVent"></span> </h5></center>
     <div class="bkg-div">
         <div class="row">
             <div class="col-sm-6" id="Sec1">
                 <div class="form-group">
                     <input type="text" class="form-control form-control-sm" id="Nombre" name="Nombre" placeholder="Nombre" title="Nombre del Cliente" readonly="true">
+                    <div class="help-block with-errors text-danger"></div>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control form-control-sm" id="Nombre2" name="Nombre2" placeholder="Nombre2" title="Negocio" readonly="true">
+                    <div class="help-block with-errors text-danger"></div>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control form-control-sm" id="Calle" name="Calle" placeholder="Calle" title="Calle" readonly="true">
+                    <div class="help-block with-errors text-danger"></div>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control form-control-sm" id="Colonia" name="Colonia" placeholder="Colonia" title="Colonia" readonly="true">
+                    <div class="help-block with-errors text-danger"></div>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control form-control-sm" id="Ciudad" name="Ciudad" placeholder="Ciudad" title="Ciudad" readonly="true">
+                    <div class="help-block with-errors text-danger"></div>
                 </div>
             </div>
             <div class="col-sm-3" id="sec2">
                 <div class="form-group">
                     <div class="input-group mb-3">
                         <input type="text" id="Cliente" name="Cliente" class="form-control form-control-sm" placeholder="Cliente" required readonly="true">
+                        <div class="help-block with-errors text-danger"></div>
                         <div class="input-group-append">
                             <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal" title="Ver lista de Clientes">Search <span class="pe-7s-search"></span></button> 
                         </div>
@@ -33,30 +39,37 @@
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control form-control-sm" id="Precio" name="Precio" placeholder="Precio" title="Precio" readonly="true" value="1">
+                    <div class="help-block with-errors text-danger"></div>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control form-control-sm" id="Descuento" name="Descuento" placeholder="Descuento" required title="Decuento" value=" 0.00">
+                    <input type="text" class="form-control form-control-sm" id="Descuento" name="Descuento" placeholder="Descuento" required title="Decuento" value="0.00">
+                    <div class="help-block with-errors text-danger"></div>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control form-control-sm" id="Tipo" name="Tipo" placeholder="Tipo" required title="Tipo">
+                    <div class="help-block with-errors text-danger"></div>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control form-control-sm" id="Credito" name="Credito" placeholder="Credito" required title="Credito" value="8">
+                    <div class="help-block with-errors text-danger"></div>
                 </div>
 
             </div>
             <div class="col-sm-3" id="Sec3">
                 <div class="form-group">
                     <input type="text" class="form-control form-control-sm" id="Venta" name="Venta" placeholder="Venta" required title="Venta" value="0051968">
+                    <div class="help-block with-errors text-danger"></div>
                 </div>
                 <div class="form-group">
                     <input type="date" class="form-control form-control-sm" id="Fecha" name="Fecha" placeholder="Fecha" title="Fecha">
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control form-control-sm" id="Sucursal" name="Sucursal" placeholder="Sucursal" required title="Sucursal" value="0">
+                    <div class="help-block with-errors text-danger"></div>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control form-control-sm" id="Vendedor" name="Vendedor" placeholder="Vendedor" required title="Vendedor">
+                    <div class="help-block with-errors text-danger"></div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
@@ -70,6 +83,7 @@
                         <div class="form-group">
                             <div class="input-group mb-3">
                                 <input type="text" id="Ruta" name="Ruta" class="form-control form-control-sm" placeholder="Ruta" required>
+                                <div class="help-block with-errors text-danger"></div>
                                 <div class="input-group-append">
                                     <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalRuta" title="Ver Lista de Rutas">Search <span class="pe-7s-search"></span></button> 
                                 </div>
@@ -134,7 +148,7 @@
                 </div>
             </div>
         </div>
-        <div id="demo2" class="collapse container" style="background-color: #FBFAFA">
+        <!--div id="demo2" class="collapse container" style="background-color: #FBFAFA">
             <div class="row">
                 <div class="col-sm-3">
                     <div class="form-group">
@@ -167,12 +181,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div-->
     </div><br>
 
     <div class="clearfix">
         <span class="float-right btn-group">
-            <button type="button" class="btn btn-outline-info btn-sm" id="btnAgregar" data-toggle="collapse" data-target="#demo2" title="Agregar Producto">Agregar <span class="pe-7s-cart"></span></button>
+            <button type="button" class="btn btn-outline-info btn-sm" id="btnAgregar" data-toggle="collapse" data-target="#demo2" title="Agregar Producto" disabled="true">Agregar <span class="pe-7s-cart"></span></button>
             <button type="submit" class="btn btn-success btn-sm" title="Registar Venta" id="addProduct" >Enviar</button>
         </span>
     </div>
@@ -345,14 +359,14 @@
 
 <script>
     $(document).ready(function () {
-        ValidBtnProducto();
+        //ValidBtnProducto();
         //Carga lista de clientes
         LoadDataJson();
         //Carga Rutas
         LoadJsonRutas();
         //Carga Productos
-        LoadJsonProductos();
+        //LoadJsonProductos();
         //Carga la fecha Actual
-        LoadDataNow();
+        //LoadDataNow();
     });
 </script>

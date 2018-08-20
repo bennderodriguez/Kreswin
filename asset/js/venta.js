@@ -14,7 +14,7 @@ $("#RealizarVenta").validator().on("submit", function (event) {
 
 
 function submitForm() {
-    addRow();
+
     // Initiate Variables With Form Content
     var Cliente = $("#Cliente").val();
     var Descuento = $("#Descuento").val();
@@ -24,6 +24,7 @@ function submitForm() {
     var Sucursal = $("#Sucursal").val();
     var Vendedor = $("#Vendedor").val();
     var Precio = $("#Precio").val();
+    var Cotizacion = $("#Cotizacion").val();
     var Ruta = $("#Ruta").val();
     var Destino = $("#Destino").val();
     var Proyecto = $("#Proyecto").val();
@@ -38,28 +39,30 @@ function submitForm() {
     var PrecioProd = $("#PrecioProd").val();
     var DescuentoProd = $("#DescuentoProd").val();
 
-    console.log(Cliente);
-    console.log(Descuento);
-    console.log(Tipo);
-    console.log(Credito);
-    console.log(Venta);
-    console.log(Sucursal);
-    console.log(Vendedor);
-    console.log(Precio);
-    console.log(Ruta);
-    console.log(Destino);
-    console.log(Proyecto);
-    console.log(Dolares);
-    console.log(Contado);
-    console.log(Explorar);
-    console.log(Nota1);
-    console.log(Nota2);
-    console.log(Nota3);
-    console.log(idProd);
-    console.log(CantProd);
-    console.log(PrecioProd);
-    console.log(DescuentoProd);
+    console.log("Cliente " + Cliente);
+    console.log("Descuento " + Descuento);
+    console.log("Tipo " + Tipo);
+    console.log("Credito " + Credito);
+    console.log("Venta " + Venta);
+    console.log("Sucursal " + Sucursal);
+    console.log("Vendedor " + Vendedor);
+    console.log("Precio " + Precio);
+    console.log("Ruta " + Ruta);
+    console.log("Cotizacion " + Cotizacion);
+    console.log("Destino " + Destino);
+    console.log("Proyecto " + Proyecto);
+    console.log("Dolares " + Dolares);
+    console.log("Contado " + Contado);
+    console.log("Explorar " + Explorar);
+    console.log("Nota1 " + Nota1);
+    console.log("Nota2 " + Nota2);
+    console.log("Nota3 " + Nota3);
+    console.log('idProd ' + idProd);
+    console.log('CantProd ' + CantProd);
+    console.log("PrecioProd " + PrecioProd);
+    console.log("DescuentoProd " + DescuentoProd);
 
+    addRow();
 
     $.ajax({
         type: "POST",
