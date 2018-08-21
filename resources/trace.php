@@ -33,6 +33,7 @@ class trace {
                 [
                 "DATE" => date("Y-m-d h:i:sa"),
                 "REMOTE_ADDR" => $_SERVER['REMOTE_ADDR'],
+                "REQUEST_URI" => $_SERVER['REQUEST_URI'],
                 "REQUEST_METHOD" => $_SERVER['REQUEST_METHOD'],
                 "REQUEST_TIME" => $_SERVER['REQUEST_TIME'],
                 "DATA" => $Data,

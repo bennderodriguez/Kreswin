@@ -32,9 +32,9 @@
 
 <!-- Web Service Login -->
 <script src="asset/js/validator.min.js"></script>
-<script type="text/javascript" src="asset/js/consulta.js"></script>
-<script type="text/javascript" src="asset/js/venta.js"></script>
-<script type="text/javascript" src="asset/js/pedido.js"></script>
+<!--script type="text/javascript" src="asset/js/consulta.js"></script>
+<script type="text/javascript" src="asset/js/pedido.js"></script-->
+<!--script type="text/javascript" src="asset/js/venta.js"></script-->
 <script>
 
     /**
@@ -156,7 +156,7 @@
 
     //Agrega una Fila a la tabla con los datos del producto seleccionado
     function addRow() {
-        $("#detalleProducto").append('<tr><td>' + $("#idProd").val() + '</td><td>' + $("#DescripcionProd").val() + '</td><td>' + $("#CantProd").val() + '</td><td>' + $("#PrecioProd").val() + '</td><td>' + $("#DescuentoProd").val() + '</td><td>6</td><td>7</td><tr>');
+        $("#detalleProducto").append('<tr><td>' + $("#idProd").val() + '</td><td>' + $("#DescripcionProd").val() + '</td><td>' + $("#CantProd").val() + '</td><td>' + $("#PrecioProd").val() + '</td><td>' + $("#DescuentoProd").val() + '</td><td>-</td><td>-</td><tr>');
         delDataProductForm();
         ValidBtnProducto();
     }

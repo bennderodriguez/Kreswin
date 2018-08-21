@@ -4,19 +4,39 @@
  * Alta de producto
  */
 
-setcookie("cCresweb", "zq+mtrjHtr7f39/f39/LzM3O39/f382ekY2anQ==");
+include './Cookie.php';
 
-// Crear un flujo
-$opciones = array(
-    'http' => array(
-        'method' => "GET",
-        'header' => "Accept-language: en\r\n" .
-        "Cookie: cCresweb=zq+mtrjHtr7f39/f39/LzM3O39/f382ekY2anQ=="
-    )
-);
+$errorMSG = "";
+if (empty($_POST["cVenta22"])) {
+    $errorMSG = "cVenta22 is required ";
+} else {
+    $cVenta22 = $_POST["cVenta22"];
+}
+if (empty($_POST["xClie22"])) {
+    $errorMSG .= "xClie22 is required ";
+} else {
+    $xClie22 = $_POST["xClie22"];
+}
+if (empty($_POST["nCant22"])) {
+    $errorMSG .= "nCant22 is required ";
+} else {
+    $nCant22 = $_POST["nCant22"];
+}
+if (empty($_POST["PROD22"])) {
+    $errorMSG .= "PROD22 is required ";
+} else {
+    $PROD22 = $_POST["PROD22"];
+}
 
-$contexto = stream_context_create($opciones);
+if ($errorMSG == "") {
+    echo file_get_contents('http://focus.acceso.crescloud.com/cgi-bwp/BI2/Menu/FocusLab/rockjs/swcravd01.bwp?cVenta22=' . $cVenta22 . '&xClie22=' . $xClie22 . '&nCant22=' . $nCant22 . '&PROD22=' . $PROD22, false, $contexto);
+} else {
+    if ($errorMSG == "") {
+        echo "Something went wrong :(";
+    } else {
+        echo $errorMSG;
+    }
+}
 
 
-echo file_get_contents('http://focus.acceso.crescloud.com/cgi-bwp/BI2/Menu/FocusLab/rockjs/swcravd01.bwp?cVenta22=0051997&xClie22=000010&nCant22=10&PROD22=010', false, $contexto);
 

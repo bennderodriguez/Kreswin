@@ -5,19 +5,53 @@
  * return: No [{"Pedido" : "*","Error" : "Pedido no disponible "}]
  */
 
-setcookie("cCresweb", "zq+mtrjHtr7f39/f39/LzM3O39/f382ekY2anQ==");
+include './Cookie.php';
 
-// Crear un flujo
-$opciones = array(
-    'http' => array(
-        'method' => "GET",
-        'header' => "Accept-language: en\r\n" .
-        "Cookie: cCresweb=zq+mtrjHtr7f39/f39/LzM3O39/f382ekY2anQ=="
-    )
-);
+$errorMSG = "";
 
-$contexto = stream_context_create($opciones);
+if (empty($_POST["xContado"])) {
+    $xContado = null;
+} else {
+    $xContado = $_POST["xContado"];
+}
+if (empty($_POST["xExportar"])) {
+    $xExportar = null;
+} else {
+    $xExportar = $_POST["xExportar"];
+}
+if (empty($_POST["xNota1"])) {
+    $xNota1 = null;
+} else {
+    $xNota1 = $_POST["xNota1"];
+}
+if (empty($_POST["xNota2"])) {
+    $xNota2 = null;
+} else {
+    $xNota2 = $_POST["xNota2"];
+}
+if (empty($_POST["xNota3"])) {
+    $xNota3 = null;
+} else {
+    $xNota3 = $_POST["xNota3"];
+}
+if (empty($_POST["xCliente"])) {
+    $errorMSG = "xCliente required ";
+} else {
+    $xCliente = $_POST["xCliente"];
+}
+if (empty($_POST["xpedido"])) {
+    $errorMSG .= "xpedido required ";
+} else {
+    $xpedido = $_POST["xpedido"];
+}
 
 
-echo file_get_contents('http://focus.acceso.crescloud.com/cgi-bwp/BI2/Menu/FocusLab/rockjs/swcravt03.bwp?20&xContado=S&xExportar=S&xNota1=Pruebas01&xNota2=Pruebas02&xNota3=Pruebas03&xCliente=000010', false, $contexto);
-
+if ($errorMSG == "") {
+    echo file_get_contents('http://focus.acceso.crescloud.com/cgi-bwp/BI2/Menu/FocusLab/rockjs/swcravt03.bwp?20&xContado=' . $xContado . '&xExportar=' . $xExportar . '&xNota1=' . $xNota1 . '&xNota2=' . $xNota2 . '&xNota3=' . $xNota3 . '&xCliente=' . $xCliente . '&xpedido=' . $xpedido, false, $contexto);
+} else {
+    if ($errorMSG == "") {
+        echo "Something went wrong :(";
+    } else {
+        echo $errorMSG;
+    }
+}

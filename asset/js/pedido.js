@@ -8,7 +8,7 @@ $("#crearPedido").validator().on("submit", function (event) {
         // everything looks good!
         event.preventDefault();
         submitForm();
-        document.getElementById("demo").innerHTML = '<div class="alert alert-info"><strong>Espere</strong> Porcesando Solicitud ...</div>';
+        document.getElementById("demo").innerHTML = '<div class="alert alert-info"><strong>Espere</strong> Procesando... <i class="pe-7s-config pe-spin pe-2x pe-va"></i></div>';
     }
 });
 
@@ -62,11 +62,11 @@ function submitForm() {
     console.log("PrecioProd " + PrecioProd);
     console.log("DescuentoProd " + DescuentoProd);
 
-    addRow();
 
     /**
      * Creo Canal de comunicacion con el SW para asignar pedido
      * URI: http://focus.acceso.crescloud.com/cgi-bwp/BI2/Menu/FocusLab/rockjs/swcravt02.bwp?xVenta2=0051997&xClie2=000010
+     * (swcravt02)
      */
     $.ajax({
         type: "POST",
@@ -77,12 +77,31 @@ function submitForm() {
             console.log(text);
             var n = text.includes("Credito");
             if (n) {
-                document.getElementById("demo").innerHTML = '<div class="alert alert-success alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Success!</strong> Pedido asignado </div>';
+                document.getElementById("demo").innerHTML = '<div class="alert alert-info"><strong>Espere</strong> Procesando... Asignando Pedido <i class="pe-7s-config pe-spin pe-2x pe-va"></i></div>';
                 //myFunction(Cliente, Venta);
-                creaJsonVenta(text, Venta)
+                //creaJsonVenta(text, Venta)
+                /***********************************************/
+                /**
+                 * Invoca SetDataVent (swcravt03)
+                 */
+                $.ajax({
+                    type: "POST",
+                    url: "getJson/setDataVent.php",
+                    data: "20&xContado=" + Contado + "&xExportar=" + Explorar + "&xNota1=" + Nota1 + "&xNota2=" + Nota2 + "&xNota3=" + Nota3 + "&xCliente=" + Cliente + "&xpedido=" + Venta,
+                    success: function (text) {
+                        //alert(text);
+                        var m = text.includes("Modificado");
+                        if (n) {
+                           creaJsonVenta(text, Venta);
+                        }
+                    }, error: function (jqXHR, textStatus, errorThrown) {
+                        document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> Operacion no realizada Presione F12</div>';
+                    }
+                });
+                /***********************************************/
                 formSuccess();
             } else {
-                document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> Pedido no asignado </div>';
+                document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> Pedido no asignado Presione F12</div>';
 
             }
         }, error: function (jqXHR, textStatus, errorThrown) {
@@ -126,6 +145,7 @@ function creaJsonVenta(data, filename) {
         success: function (text) {
             if (text == "success") {
                 document.getElementById("demo").innerHTML = '<div class="alert alert-success alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Success!</strong> Pedido asignado </div>';
+                location.href = "venta.php?venta=" + filename;
             } else {
                 document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> Operacion no realizada Presione F12</div>';
             }

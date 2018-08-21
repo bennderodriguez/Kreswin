@@ -56,9 +56,19 @@
 
             </div>
             <div class="col-sm-3" id="Sec3">
-                <div class="form-group">
-                    <input type="text" class="form-control form-control-sm" id="Venta" name="Venta" placeholder="Venta" required title="Venta" value="0051968">
-                    <div class="help-block with-errors text-danger"></div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-sm" id="Venta" name="Venta" placeholder="Venta" required title="Venta">
+                            <div class="help-block with-errors text-danger"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-sm" id="Estatus" name="Estatus" placeholder="Estatus" required title="Estatus" value="X">
+                            <div class="help-block with-errors text-danger"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group">
                     <input type="date" class="form-control form-control-sm" id="Fecha" name="Fecha" placeholder="Fecha" title="Fecha">
@@ -356,7 +366,7 @@
 
 
 <?php include 'footer.php'; ?>
-
+<script type="text/javascript" src="asset/js/pedido.js"></script>
 <script>
     $(document).ready(function () {
         //ValidBtnProducto();
@@ -367,6 +377,87 @@
         //Carga Productos
         //LoadJsonProductos();
         //Carga la fecha Actual
-        //LoadDataNow();
+        LoadDataNow();
+        //Carga numero consecutivo de la venta
+        getNumeroVenta();
     });
+
+
+    /**
+     * Consulta el consecutivo de venta y lo coloca en el directorio json/NumeroVenta.json
+     * @returns {undefined}
+     */
+    function getNumeroVenta() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var serverRequest = this.responseText;
+
+                /*Este servicio contiene espam por lo que separamos en cadenas
+                 * para extraer unicamente el numero del pedido
+                 */
+                //1. Separo con split todo lo que este entre [
+                var str = serverRequest;
+                var res = str.split("[");
+                console.log(res[1]);
+                //2. El resultado se parcea nuevamente pero ahoa con ]
+                var str2 = res[1];
+                var res2 = str2.split("]");
+                console.log(res2[0]);
+                //3. ahora se agregan corchetes
+                var array = '{"data" : [';
+                array += res2[0].replace("},]", "}]");
+                //array += array.replace("{}", "");
+                array += ']}';
+                var array2 = array.replace(", {}", "");
+                console.log(array2);
+
+                document.getElementById("demo").innerHTML = array;
+                //se guarda en un archivo json/NumeroVenta.json
+                $.ajax({
+                    type: "POST",
+                    url: "clean-json/get-url.php",
+                    data: "dataArray=" + array2 + "&fileName=NumeroVenta",
+                    success: function (text) {
+                        if (text == "success") {
+                            //invoca funcion
+                            setNumeroVenta();
+                            document.getElementById("demo").innerHTML = '';
+                        } else {
+                            document.getElementById("demo").innerHTML = '<div class="alert alert-danger"><strong>Error</strong> Ocurrio un error presione F12</div>';
+
+                        }
+                    }
+                });
+            } else {
+                document.getElementById("demo").innerHTML = '<div class="alert alert-info"><strong>Espere</strong> Cargando Contenido ... espere <i class="pe-7s-config pe-spin pe-2x pe-va"></i></div>';
+            }
+
+            return array;
+        };
+        xhttp.open("GET", "getJson/getConsecutivoVent.php", true);
+        xhttp.send();
+        // The function returns the product of p1 and p2
+    }
+
+    /**
+     * lee Json con el numero de venta actual y lo setea en el input id="Venta"
+     * */
+    function setNumeroVenta() {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var myObj = JSON.parse(this.responseText);
+                console.log(myObj.data);
+                console.log(myObj.data[0].Pedido);
+
+                $('#Venta').val(myObj.data[0].Pedido);
+            }
+            if (this.status == 404) {
+                console.log("error setNumeroVenta()");
+            }
+        };
+        xmlhttp.open("GET", "json/NumeroVenta.json", true);
+        xmlhttp.send();
+    }
 </script>

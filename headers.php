@@ -26,6 +26,7 @@ include_once './resources/trace.php';
         <!-- sviAxa personalite CSS -->
         <link rel="stylesheet" href="asset/css/sviaxa.css">
         <link rel="stylesheet" href="asset/css/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+        <link rel="stylesheet" href="asset/css/pe-icon-7-stroke/css/helper.css">
         <link href="https://fonts.googleapis.com/css?family=Sniglet:400,500,700|Metric-Light:400,900" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
 

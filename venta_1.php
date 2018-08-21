@@ -1,11 +1,4 @@
-<?php
-if (empty($_GET["venta"])) {
-    echo "venta is required ";
-} else {
-    $venta = $_GET["venta"];
-}
-include 'headers.php';
-?>
+<?php include 'headers.php'; ?>
 
 
 <form class="form-horizontal" id="RealizarVenta" role="form" autocomplete="off"><br>
@@ -33,7 +26,6 @@ include 'headers.php';
                 <div class="form-group">
                     <div class="input-group mb-3">
                         <input type="text" id="Cliente" name="Cliente" class="form-control form-control-sm" placeholder="Cliente" required readonly="true">
-                        <div class="help-block with-errors text-danger"></div>
                         <div class="input-group-append">
                             <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal" title="Ver lista de Clientes">Search <span class="pe-7s-search"></span></button> 
                         </div>
@@ -43,44 +35,28 @@ include 'headers.php';
                     <input type="text" class="form-control form-control-sm" id="Precio" name="Precio" placeholder="Precio" title="Precio" readonly="true" value="1">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control form-control-sm" id="Descuento" name="Descuento" placeholder="Descuento" required title="Decuento" value="0.00">
-                    <div class="help-block with-errors text-danger"></div>
+                    <input type="text" class="form-control form-control-sm" id="Descuento" name="Descuento" placeholder="Descuento" required title="Decuento" value=" 0.00">
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control form-control-sm" id="Tipo" name="Tipo" placeholder="Tipo" required title="Tipo">
-                    <div class="help-block with-errors text-danger"></div>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control form-control-sm" id="Credito" name="Credito" placeholder="Credito" required title="Credito" value="8">
-                    <div class="help-block with-errors text-danger"></div>
                 </div>
 
             </div>
             <div class="col-sm-3" id="Sec3">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <input type="text" class="form-control form-control-sm" id="Venta" name="Venta" placeholder="Venta" required title="Venta" readonly="true">
-                            <div class="help-block with-errors text-danger"></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <input type="text" class="form-control form-control-sm" id="Estatus" name="Estatus" placeholder="Estatus" required title="Estatus" readonly="true">
-                            <div class="help-block with-errors text-danger"></div>
-                        </div>
-                    </div>
+                <div class="form-group">
+                    <input type="text" class="form-control form-control-sm" id="Venta" name="Venta" placeholder="Venta" required title="Venta" value="0051968">
                 </div>
                 <div class="form-group">
                     <input type="date" class="form-control form-control-sm" id="Fecha" name="Fecha" placeholder="Fecha" title="Fecha">
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control form-control-sm" id="Sucursal" name="Sucursal" placeholder="Sucursal" required title="Sucursal" value="0">
-                    <div class="help-block with-errors text-danger"></div>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control form-control-sm" id="Vendedor" name="Vendedor" placeholder="Vendedor" required title="Vendedor">
-                    <div class="help-block with-errors text-danger"></div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
@@ -94,7 +70,6 @@ include 'headers.php';
                         <div class="form-group">
                             <div class="input-group mb-3">
                                 <input type="text" id="Ruta" name="Ruta" class="form-control form-control-sm" placeholder="Ruta" required>
-                                <div class="help-block with-errors text-danger"></div>
                                 <div class="input-group-append">
                                     <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalRuta" title="Ver Lista de Rutas">Search <span class="pe-7s-search"></span></button> 
                                 </div>
@@ -167,7 +142,6 @@ include 'headers.php';
                         <div class="input-group mb-3">
                             <input type="hidden" id="idProd" name="idProd" class="form-control form-control-sm" required readonly="true">
                             <input type="text" id="DescripcionProd" name="DescripcionProd" class="form-control form-control-sm" required readonly="true">
-                            <div class="help-block with-errors text-danger"></div>
                             <div class="input-group-append">
                                 <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#modalProductos" title="Ver lista de Productos">Search <span class="pe-7s-search"></span></button> 
                             </div>
@@ -178,21 +152,18 @@ include 'headers.php';
                     <div class="form-group">
                         <label>Cantidad</label>
                         <input type="number" class="form-control form-control-sm" id="CantProd" name="CantProd" value name="CantProd" value="" required>
-                        <div class="help-block with-errors text-danger"></div>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="form-group">
                         <label>Precio</label>
                         <input type="text" class="form-control form-control-sm" id="PrecioProd" name="PrecioProd" required readonly="true">
-                        <div class="help-block with-errors text-danger"></div>
                     </div>
                 </div>
                 <div class="col-sm-2">
                     <div class="form-group">
                         <label>Descuento</label>
                         <input type="number" class="form-control form-control-sm" id="DescuentoProd" name="DescuentoProd" required="" value="0" min="0">
-                        <div class="help-block with-errors text-danger"></div>
                     </div>
                 </div>
             </div>
@@ -237,21 +208,21 @@ include 'headers.php';
                 <div class="input-group-prepend">
                     <span class="input-group-text">Suma</span>
                 </div>
-                <input type="text" class="form-control" id="Tieps" name="Tieps" readonly>
+                <input type="text" class="form-control" id="Tieps" readonly>
             </div>
 
             <div class="input-group mb-3 input-group-sm">
                 <div class="input-group-prepend">
                     <span class="input-group-text">I.V.A</span>
                 </div>
-                <input type="text" class="form-control" id="Tiva" name="Tiva" readonly>
+                <input type="text" class="form-control" id="Tiva" readonly>
             </div>
 
             <div class="input-group mb-3 input-group-sm">
                 <div class="input-group-prepend">
                     <span class="input-group-text">Total</span>
                 </div>
-                <input type="text" class="form-control" id="Tsaldo"  name="Tsaldo" readonly>
+                <input type="text" class="form-control" id="Tsaldo" readonly>
             </div>
 
         </div>
@@ -370,9 +341,7 @@ include 'headers.php';
 </div>
 
 
-<?php
-include 'footer.php';
-?>
+<?php include 'footer.php'; ?>
 
 <script>
     $(document).ready(function () {
@@ -385,77 +354,5 @@ include 'footer.php';
         LoadJsonProductos();
         //Carga la fecha Actual
         LoadDataNow();
-
-        var pedido = <?php print_r($venta) ?>;
-        cargaPedido(pedido);
-        
     });
-
-    function cargaPedido(pedido) {
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
-                var myObj = JSON.parse(this.responseText);
-
-                $('#Nombre').val(myObj.data[0].Nombre);
-                $('#Nombre2').val(myObj.data[0].Nombre2);
-                $('#Calle').val(myObj.data[0].Calle);
-                $('#Colonia').val(myObj.data[0].Colonia);
-                $('#Ciudad').val(myObj.data[0].Ciudad);
-
-
-                $('#Venta').val(myObj.data[0].Pedido);
-                $('#Estatus').val(myObj.data[0].Estatus);
-                $('#Cliente').val(myObj.data[0].Cliente);
-                $('#Vendedor').val(myObj.data[0].Vendedor);
-                $('#Sucursal').val(myObj.data[0].Sucursal);
-                //estatus
-                $('#Precio').val(myObj.data[0].Precio);
-                $('#Descuento').val(myObj.data[0].Descuento);
-                $('#Tipo').val(myObj.data[0].Tipo);
-                $('#Credito').val(myObj.data[0].Credito);
-                $('#Ruta').val(myObj.data[0].Ruta);
-                //destino
-                //Proyecto
-                //Dolares
-                //contado
-                //Explorar
-                $('#Nota1').val(myObj.data[0].Nota1);
-                $('#Nota2').val(myObj.data[0].Nota3);
-                $('#Nota3').val(myObj.data[0].Nota3);
-
-
-                console.log(myObj.data);
-            }
-            if (this.status == 404) {
-                console.log("error cargaPedido()");
-                document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong>  Numero de venta Inexistente </div>';
-
-            }
-        };
-        xmlhttp.open("GET", "json/00" + pedido + ".json", true);
-        xmlhttp.send();
-    }
-
-    function cargaVentaTotal(venta) {
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
-                var myObj = JSON.parse(this.responseText);
-                console.log(myObj.data);
-                //console.log(myObj.data[1].Suma);
-               
-                $('#Tieps').val(myObj.data[1].Suma);
-                $('#Tiva').val(myObj.data[1].impuesto);
-                $('#Tsaldo').val(myObj.data[1].TOTAL);
-            }
-            if (this.status == 404) {
-                console.log("error cargaVentaTotal()");
-                document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong>  Numero de venta Inexistente </div>';
-            }
-        };
-        xmlhttp.open("GET", "json/vt" + venta + ".json", true);
-        xmlhttp.send();
-    }
-
 </script>

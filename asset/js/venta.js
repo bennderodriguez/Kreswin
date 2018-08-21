@@ -62,31 +62,27 @@ function submitForm() {
     console.log("PrecioProd " + PrecioProd);
     console.log("DescuentoProd " + DescuentoProd);
 
-    addRow();
-
     $.ajax({
         type: "POST",
-        url: "sendDataKC/index.php",
+        url: "getJson/setProducto.php",
         data: 'cVenta22=' + Venta + '&xClie22=' + Cliente + '&nCant22=' + CantProd + '&PROD22=' + idProd,
         success: function (text) {
             //alert(text);
             console.log(text);
-            var n = text.includes("Modificado");
-//            if (n) {
-//                document.getElementById("demo").innerHTML = '<div class="alert alert-success alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Success!</strong> Actualización realizada </div>';
-//                myFunction(Cliente, Venta);
-//                formSuccess();
-//            } else {
-//                document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> Actualización no realizada </div>';
-//
-//            }
-        }, error: function (jqXHR, textStatus, errorThrown) {
-            document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> Actualización no realizada </div>';
-        }, complete: function (jqXHR, textStatus) {
-            document.getElementById("demo").innerHTML = '<div class="alert alert-success alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Success!</strong> Actualización realizada </div>';
+            var n = text.includes("impuesto");
+            if (n) {
+                document.getElementById("demo").innerHTML = '<div class="alert alert-success alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Success!</strong> Producto Agregado</div>';
+                addRow();
+                creaVentaTotalJson(text, Venta)
+            } else {
+                document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> Producto no Agregado </div>';
 
+            }
+        }, error: function (jqXHR, textStatus, errorThrown) {
+            document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> Operacion no realizada Presione F12</div>';
         }
     });
+
 }
 
 function formSuccess() {
@@ -109,40 +105,27 @@ function submitMSG(valid, msg) {
     $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 }
 
-function myFunction(Cliente, Perdido) {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            var serverRequest = this.responseText;
-            var array = '{"data" : ';
-            array += serverRequest.replace("},]", "}]");
-            //array += array.replace("{}", "");
-            array += '}';
-            var array2 = array.replace(", {}", "");
-            console.log(array2);
-            //document.getElementById("demo").innerHTML = array;
-            $.ajax({
-                type: "POST",
-                url: "clean-json/get-url.php",
-                data: "dataArray=" + array2 + "&fileName=Pedido",
-                success: function (text) {
-                    if (text == "success") {
-                        document.getElementById("demo").innerHTML = '<div class="alert alert-success alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Success!</strong> Actualización realizada </div>';
-                        //LoadVenta();
-                        loadVentas();
-                        LoadPedido();
-                    } else {
-                        document.getElementById("demo").innerHTML = '<div class="alert alert-danger"><strong>Error</strong> Ocurrio un error presione F12</div>';
-                    }
-                }
-            });
-        } else {
-            document.getElementById("demo").innerHTML = '<div class="alert alert-warning"><strong>Espere</strong> Cargando Contenido ... espere</div>';
+function creaVentaTotalJson(data, filename) {
+    var array = '{"data" : ';
+    array += data.replace("},]", "}]");
+    //array += array.replace("{}", "");
+    array += '}';
+    var array2 = array.replace(", {}", "");
+    console.log(array2);
+    //document.getElementById("demo").innerHTML = array;
+    $.ajax({
+        type: "POST",
+        url: "clean-json/get-url.php",
+        data: "dataArray=" + array2 + "&fileName=vt" + filename,
+        success: function (text) {
+            if (text == "success") {
+                document.getElementById("demo").innerHTML = '<div class="alert alert-success alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Success!</strong> Pedido asignado </div>';
+                //location.href = "venta.php?venta=" + filename;
+                cargaVentaTotal(filename);
+            } else {
+                document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> Operacion no realizada Presione F12</div>';
+            }
         }
+    });
 
-        return array;
-    };
-    xhttp.open("GET", 'http://focus.acceso.crescloud.com/cgi-bwp/BI2/Menu/FocusLab/Oscar/SwPedidoDat_fc.bwp?xVenta2=' + Perdido + '&xClie2=' + Cliente, true);
-    xhttp.send();
-    // The function returns the product of p1 and p2
 }
