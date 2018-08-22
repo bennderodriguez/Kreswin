@@ -3,9 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/Kreswin/getJson/getCliente.php</file>
-            <file>file:/C:/xampp/htdocs/Kreswin/sendDataKC/index.php</file>
-            <file>file:/C:/xampp/htdocs/Kreswin/cleanClientesSW.php</file>
+            <file>file:/C:/xampp/htdocs/Kreswin/venta.php</file>
+            <file>file:/C:/xampp/htdocs/Kreswin/asset/js/venta.js</file>
+            <file>file:/C:/xampp/htdocs/Kreswin/pedido.php</file>
+            <file>file:/C:/xampp/htdocs/Kreswin/asset/js/pedido.js</file>
         </group>
     </open-files>
 </project-private>

@@ -3,7 +3,6 @@
  * implementa trace
  */
 include_once './resources/trace.php';
-
 ?>
 <!DOCTYPE html>
 <html lang="es">

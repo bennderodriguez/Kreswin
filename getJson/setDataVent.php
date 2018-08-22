@@ -4,7 +4,6 @@
  * Alta de datos de la venta
  * return: No [{"Pedido" : "*","Error" : "Pedido no disponible "}]
  */
-
 include './Cookie.php';
 
 $errorMSG = "";

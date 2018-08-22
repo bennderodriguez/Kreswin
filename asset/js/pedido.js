@@ -78,8 +78,7 @@ function submitForm() {
             var n = text.includes("Credito");
             if (n) {
                 document.getElementById("demo").innerHTML = '<div class="alert alert-info"><strong>Espere</strong> Procesando... Asignando Pedido <i class="pe-7s-config pe-spin pe-2x pe-va"></i></div>';
-                //myFunction(Cliente, Venta);
-                //creaJsonVenta(text, Venta)
+                creaJsonVenta(text, Venta)
                 /***********************************************/
                 /**
                  * Invoca SetDataVent (swcravt03)
@@ -92,10 +91,8 @@ function submitForm() {
                         //alert(text);
                         var m = text.includes("Modificado");
                         if (n) {
-                           creaJsonVenta(text, Venta);
+                            console.log("SetDataVent ok");
                         }
-                    }, error: function (jqXHR, textStatus, errorThrown) {
-                        document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> Operacion no realizada Presione F12</div>';
                     }
                 });
                 /***********************************************/
@@ -131,13 +128,25 @@ function submitMSG(valid, msg) {
 }
 
 function creaJsonVenta(data, filename) {
-    var array = '{"data" : ';
-    array += data.replace("},]", "}]");
+    console.log(data);
+    /*Este servicio contiene espam por lo que separamos en cadenas
+     * para extraer unicamente el numero del pedido
+     */
+    //1. Separo con split todo lo que este entre [
+    var str = data;
+    var res = str.split("[");
+    console.log(res[1]);
+    //2. El resultado se parcea nuevamente pero ahoa con ]
+    var str2 = res[1];
+    var res2 = str2.split("]");
+    console.log(res2[0]);
+    //3. ahora se agregan corchetes
+    var array = '{"data" : [';
+    array += res2[0].replace("},]", "}]");
     //array += array.replace("{}", "");
-    array += '}';
+    array += ']}';
     var array2 = array.replace(", {}", "");
     console.log(array2);
-    //document.getElementById("demo").innerHTML = array;
     $.ajax({
         type: "POST",
         url: "clean-json/get-url.php",

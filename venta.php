@@ -1,9 +1,4 @@
 <?php
-if (empty($_GET["venta"])) {
-    echo "venta is required ";
-} else {
-    $venta = $_GET["venta"];
-}
 include 'headers.php';
 ?>
 
@@ -211,19 +206,32 @@ include 'headers.php';
     <div class="row">
         <div class="col-sm-12">
             <div class="table-responsive">
-                <table class="table table-striped table-sm" id="detalleProducto">
-                    <thead>
-                        <tr class="table-primary">
-                            <th>Producto</th>
-                            <th>Descripción</th>
-                            <th>Cantidad</th>
-                            <th>Precio</th>
-                            <th>%</th>
-                            <th>Importe</th>
-                            <th>Neto</th>
-                        </tr>
-                    </thead>
-                </table>
+                <div class="table-responsive-sm">
+                    <table class="table table-striped table-sm" id="loadProductosVendidos" >
+                        <thead>
+                            <tr class="table-primary">
+                                <th>Producto</th>
+                                <th>Descripcion</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                                <th>Porcentaje</th>
+                                <th>Importe</th>
+                                <th>Neto</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr class="table-active">
+                                <th>Total</th>
+                                <th></th>
+                                <th><span id="TCantidad"></span></th>
+                                <th></th>
+                                <th></th>
+                                <th><span id="TImporte"></span></th>
+                                <th><span id="TNeto"></span></th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
@@ -376,6 +384,7 @@ include 'footer.php';
 
 <script>
     $(document).ready(function () {
+        //Valida boton agregar
         ValidBtnProducto();
         //Carga lista de clientes
         LoadDataJson();
@@ -386,17 +395,68 @@ include 'footer.php';
         //Carga la fecha Actual
         LoadDataNow();
 
-        var pedido = <?php print_r($venta) ?>;
-        cargaPedido(pedido);
-        
+        var venta = "<?php echo $_GET["venta"] ?>";
+        cargaPedido();
+        //********************//
+        loadProductosVendidos(venta);
+        cargaTotales(venta);
+
     });
 
-    function cargaPedido(pedido) {
+    function cargaTotales(venta) {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var myObj = JSON.parse(this.responseText);
+//                console.log(myObj.Total.TImporte);
+//                console.log(myObj.Total.Tiva);
+//                console.log(myObj.Total.TNeto);
+                //document.getElementById("des").innerHTML = myObj.Total.Venta;
+                document.getElementById("NumVent").innerHTML = venta;
+                document.getElementById("TCantidad").innerHTML = myObj.Total.TCantidad;
+                document.getElementById("TImporte").innerHTML = myObj.Total.TImporte;
+                document.getElementById("TNeto").innerHTML = myObj.Total.TNeto;
+                $('#Tieps').val(myObj.Total.TImporte);
+                $('#Tiva').val(myObj.Total.Tiva);
+                $('#Tsaldo').val(myObj.Total.TNeto);
+            }
+        };
+        xmlhttp.open("GET", "json/vt" + venta + ".json", true);
+        xmlhttp.send();
+    }
+
+    function loadProductosVendidos(venta) {
+        var table = $('#loadProductosVendidos').DataTable({
+            "ajax": "json/vt" + venta + ".json",
+            "columns": [
+                {"data": "Producto"},
+                {"data": "Descripcion"},
+                {"data": "Cantidad"},
+                {"data": "Precio"},
+                {"data": "Porcentaje"},
+                {"data": "Importe"},
+                {"data": "Neto"}
+            ]
+        });
+
+        //al darle clic a un row invoca a saveVaClient()
+        $('#loadProductosVendidos').on('click', 'tr', function () {
+            var data = table.row(this).data();
+            alert('You clicked on ' + data.Producto + '\'s row');
+            //setProducto(data.Producto, data.Descripcion, data.C_R_I, data.Unidad_de_empaque);
+            //Cierra la ventana Modal Ruta
+            //$("#modalVenta .close").click();
+            //ValidBtnProducto();
+        });
+    }
+
+    function cargaPedido() {
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 var myObj = JSON.parse(this.responseText);
 
+                document.getElementById("NumVent").innerHTML = myObj.data[0].Pedido;
                 $('#Nombre').val(myObj.data[0].Nombre);
                 $('#Nombre2').val(myObj.data[0].Nombre2);
                 $('#Calle').val(myObj.data[0].Calle);
@@ -433,29 +493,10 @@ include 'footer.php';
 
             }
         };
-        xmlhttp.open("GET", "json/00" + pedido + ".json", true);
-        xmlhttp.send();
-    }
-
-    function cargaVentaTotal(venta) {
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
-                var myObj = JSON.parse(this.responseText);
-                console.log(myObj.data);
-                //console.log(myObj.data[1].Suma);
-               
-                $('#Tieps').val(myObj.data[1].Suma);
-                $('#Tiva').val(myObj.data[1].impuesto);
-                $('#Tsaldo').val(myObj.data[1].TOTAL);
-            }
-            if (this.status == 404) {
-                console.log("error cargaVentaTotal()");
-                document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong>  Numero de venta Inexistente </div>';
-            }
-        };
-        xmlhttp.open("GET", "json/vt" + venta + ".json", true);
+        var pedido = "<?php echo $_GET["venta"] ?>";
+        xmlhttp.open("GET", "json/" + pedido + ".json", true);
         xmlhttp.send();
     }
 
 </script>
+<script type="text/javascript" src="asset/js/venta.js"></script>
