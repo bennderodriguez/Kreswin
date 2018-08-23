@@ -1,3 +1,10 @@
-{"data" : [{"Vendedor" : " 0", "Nombre" : "DISTRIBUCIONES Y REP", "Calle" : "PRIVADA CUAUHTEMOC NO. 2", "Colonia" : "EL CARMEN TOTOLTEPEC", "Ciudad" : "TOLUCA EDO.MEX.", "Telefonos" : "3278184"}]
-
+{
+    "data": [{
+            "Vendedor": " 0",
+            "Nombre": "DISTRIBUCIONES Y REP",
+            "Calle": "PRIVADA CUAUHTEMOC NO. 2",
+            "Colonia": "EL CARMEN TOTOLTEPEC",
+            "Ciudad": "TOLUCA EDO.MEX.",
+            "Telefonos": "3278184"
+        }]
 }

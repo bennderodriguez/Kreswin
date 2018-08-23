@@ -83,6 +83,34 @@
         });
     }
 
+    /**
+     * Carga el cataogo de vendedores 
+     * @returns {undefined}
+     */
+    function loadVendedores() {
+        var table = $('#tablaVendedor').DataTable({
+            "ajax": "json/Vendedor.json",
+            "columns": [
+                {"data": "Vendedor"},
+                {"data": "Nombre"},
+                {"data": "Puesto"}
+            ]
+        });
+
+        //al darle clic a un row invoca a saveVaClient()
+        $('#tablaVendedor').on('click', 'tr', function () {
+            var data = table.row(this).data();
+            //alert('You clicked on ' + data.Vendedor + '\'s row');
+            setValVendedor(data.Vendedor);
+            //Cierra la ventana Modal Vendedor
+            //Cierra la ventana Modal Ruta
+            $("#ModalVendedor .close").click()
+        });
+    }
+    function setValVendedor(vendedor) {
+        $('#Vendedor').val(vendedor);
+    }
+
     function LoadJsonRutas() {
         var table = $('#tableRuta').DataTable({
             "ajax": "json/Rutas.json",
@@ -134,7 +162,7 @@
         $('#DescripcionProd').val(Descripcion);
         $('#CantProd').val("1");
         $('#PrecioProd').val(C_R_I);
-        $('#DescuentoProd').val(Unidad_de_empaque);
+        $('#DescuentoProd').val("0");
     }
 
     /**

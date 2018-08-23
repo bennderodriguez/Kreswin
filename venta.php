@@ -88,7 +88,7 @@ include 'headers.php';
                     <div class="col-sm-6">
                         <div class="form-group">
                             <div class="input-group mb-3">
-                                <input type="text" id="Ruta" name="Ruta" class="form-control form-control-sm" placeholder="Ruta" required>
+                                <input type="text" id="Ruta" name="Ruta" class="form-control form-control-sm" placeholder="Ruta">
                                 <div class="help-block with-errors text-danger"></div>
                                 <div class="input-group-append">
                                     <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalRuta" title="Ver Lista de Rutas">Search <span class="pe-7s-search"></span></button> 
@@ -172,7 +172,7 @@ include 'headers.php';
                 <div class="col-sm-3">
                     <div class="form-group">
                         <label>Cantidad</label>
-                        <input type="number" class="form-control form-control-sm" id="CantProd" name="CantProd" value name="CantProd" value="" required>
+                        <input type="number" class="form-control form-control-sm" id="CantProd" name="CantProd" value name="CantProd" value="" min="1" required>
                         <div class="help-block with-errors text-danger"></div>
                     </div>
                 </div>
@@ -186,7 +186,7 @@ include 'headers.php';
                 <div class="col-sm-2">
                     <div class="form-group">
                         <label>Descuento</label>
-                        <input type="number" class="form-control form-control-sm" id="DescuentoProd" name="DescuentoProd" required="" value="0" min="0">
+                        <input type="number" class="form-control form-control-sm" id="DescuentoProd" name="DescuentoProd" required="" value="0" min="0" max="100">
                         <div class="help-block with-errors text-danger"></div>
                     </div>
                 </div>
@@ -197,7 +197,7 @@ include 'headers.php';
     <div class="clearfix">
         <span class="float-right btn-group">
             <button type="button" class="btn btn-outline-info btn-sm" id="btnAgregar" data-toggle="collapse" data-target="#demo2" title="Agregar Producto">Agregar <span class="pe-7s-cart"></span></button>
-            <button type="submit" class="btn btn-success btn-sm" title="Registar Venta" id="addProduct" >Enviar</button>
+            <button type="submit" class="btn btn-success btn-sm" title="Registar Venta" id="addProduct" >Guardar <span class="pe-7s-shopbag"></button>
         </span>
     </div>
     <div id="demo"></div>
@@ -207,7 +207,7 @@ include 'headers.php';
         <div class="col-sm-12">
             <div class="table-responsive">
                 <div class="table-responsive-sm">
-                    <table class="table table-striped table-sm" id="loadProductosVendidos" >
+                    <table class="table table-striped table-sm table-hover" id="loadProductosVendidos" >
                         <thead>
                             <tr class="table-primary">
                                 <th>Producto</th>
@@ -238,7 +238,6 @@ include 'headers.php';
 
     <div class="row">
         <div class="col-sm-8">
-            meee
         </div>
         <div class="col-sm-4" id="iva-Box">
             <div class="input-group mb-3 input-group-sm">
@@ -377,6 +376,60 @@ include 'headers.php';
     </div>
 </div>
 
+<div class="modal fade" id="modalUpdateProd">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Productos</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="table-responsive">
+                    <table class="table table-striped" id="tableProducto" >
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>descripcion</th>
+                                <th>precio</th>
+                                <th>descuento</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="optionDataRow" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
 
 <?php
 include 'footer.php';
@@ -384,6 +437,7 @@ include 'footer.php';
 
 <script>
     $(document).ready(function () {
+
         //Valida boton agregar
         ValidBtnProducto();
         //Carga lista de clientes
@@ -442,11 +496,42 @@ include 'footer.php';
         //al darle clic a un row invoca a saveVaClient()
         $('#loadProductosVendidos').on('click', 'tr', function () {
             var data = table.row(this).data();
-            alert('You clicked on ' + data.Producto + '\'s row');
-            //setProducto(data.Producto, data.Descripcion, data.C_R_I, data.Unidad_de_empaque);
-            //Cierra la ventana Modal Ruta
-            //$("#modalVenta .close").click();
-            //ValidBtnProducto();
+            //alert('You clicked on set' + data.Producto + '\'s row');
+            //eliminarProducto(data.Producto);
+            if (confirm("¿Estás seguro que quieres eliminar este producto?")) {
+                eliminarProducto(data.Producto);
+            } else {
+                return false;
+            }
+//            falta implementar pop up para que decida si eliminar o actualizar
+           // $("#optionDataRow").modal('show');
+        });
+    }
+
+    function eliminarProducto(Producto) {
+        document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Espere!</strong> Eliminando producto <i class="pe-7s-close-circle pe-spin pe-2x pe-va"></i></div>';
+        var Venta = $("#Venta").val();
+        var Cliente = $("#Cliente").val();
+        var cantidad = 0;
+        console.log(Producto);
+        console.log(Venta);
+        console.log(cantidad);
+        $.ajax({
+            type: "POST",
+            url: "getJson/deleteProducto.php",
+            data: "cVenta22=" + Venta + "&xClie22=" + Cliente + "&nCant22=0&PROD22=" + Producto,
+            success: function (text) {
+                consultaVentaTotal(Venta);
+                console.log(text);
+            },
+            error: function (request, status, error) {
+                alert(request.responseText);
+                console.log(request.responseText);
+                console.log(request.status);
+                console.log(request.error);
+                document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> La acción terminó con un error Fatal presione F12</div>';
+
+            }
         });
     }
 

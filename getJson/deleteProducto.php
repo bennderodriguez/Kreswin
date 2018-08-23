@@ -3,9 +3,32 @@
 /**
  * Elimina producto
  */
-
 include './Cookie.php';
 
+$errorMSG = "";
+if (empty($_POST["cVenta22"])) {
+    $errorMSG = "cVenta22 is required ";
+} else {
+    $cVenta22 = $_POST["cVenta22"];
+}
+if (empty($_POST["xClie22"])) {
+    $errorMSG .= "xClie22 is required ";
+} else {
+    $xClie22 = $_POST["xClie22"];
+}
+if (empty($_POST["PROD22"])) {
+    $errorMSG .= "PROD22 is required ";
+} else {
+    $PROD22 = $_POST["PROD22"];
+}
 
-echo file_get_contents('http://focus.acceso.crescloud.com/cgi-bwp/BI2/Menu/FocusLab/rockjs/swcrmvd01.bwp?cVenta22=0051997&xClie22=000010&nCant22=0&PROD22=011', false, $contexto);
+if ($errorMSG == "") {
+    echo file_get_contents('http://focus.acceso.crescloud.com/cgi-bwp/BI2/Menu/FocusLab/flavio/swcrmvd01.bwp?cVenta22='.$cVenta22.'&xClie22='.$xClie22.'&nCant22=0&PROD22='.$PROD22.'&xdes22=2.00&xnota122=hola1&xnota222=hola2&xnota322=hola3', false, $contexto);
+} else {
+    if ($errorMSG == "") {
+        echo "Something went wrong :(";
+    } else {
+        echo $errorMSG;
+    }
+}
 

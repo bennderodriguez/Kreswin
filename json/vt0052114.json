@@ -1,0 +1,27 @@
+{
+    "data": [{
+            "Producto": "014",
+            "Descripcion": "CARIBE COOLER TINTO 300 ML (24)",
+            "Cantidad": "        1",
+            "Precio": "     267.25",
+            "Porcentaje": "       0.00",
+            "Importe": "     267.25",
+            "Neto": "       267.25"
+        }, {
+            "Producto": "010",
+            "Descripcion": "LA LECHERA 387GRS. (48)",
+            "Cantidad": "        4",
+            "Precio": "      17.64",
+            "Porcentaje": "       2.00",
+            "Importe": "      70.56",
+            "Neto": "        70.56"
+        }],
+    "Total": {
+        "TCantidad": "          5",
+        "TImporte": "       337.81",
+        "Tieps": "         0.00",
+        "Tiva": "        42.76",
+        "Tsaldo": "         0.00",
+        "TNeto": "       380.57"
+    }
+}

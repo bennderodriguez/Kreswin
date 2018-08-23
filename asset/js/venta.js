@@ -8,7 +8,7 @@ $("#RealizarVenta").validator().on("submit", function (event) {
         // everything looks good!
         event.preventDefault();
         submitForm();
-        document.getElementById("demo").innerHTML = '<div class="alert alert-info"><strong>Espere</strong> Porcesando Solicitud ... <i class="pe-7s-config pe-spin pe-2x pe-va"></i></div>';
+        document.getElementById("demo").innerHTML = '<div class="alert alert-info"><strong>Espere</strong> Procesando Solicitud ... <i class="pe-7s-config pe-spin pe-2x pe-va"></i></div>';
     }
 });
 
@@ -38,8 +38,9 @@ function submitForm() {
     var CantProd = $("#CantProd").val();
     var PrecioProd = $("#PrecioProd").val();
     var DescuentoProd = $("#DescuentoProd").val();
+    var DescripcionProd = $("#DescripcionProd").val();
 
-    /*console.log("Cliente " + Cliente);
+    console.log("Cliente " + Cliente);
     console.log("Descuento " + Descuento);
     console.log("Tipo " + Tipo);
     console.log("Credito " + Credito);
@@ -60,12 +61,13 @@ function submitForm() {
     console.log('idProd ' + idProd);
     console.log('CantProd ' + CantProd);
     console.log("PrecioProd " + PrecioProd);
-    console.log("DescuentoProd " + DescuentoProd);*/
+    console.log("DescuentoProd " + DescuentoProd);
+    console.log("DescripcionProd " + DescripcionProd);
 
     $.ajax({
         type: "POST",
         url: "getJson/setProducto.php",
-        data: 'cVenta22=' + Venta + '&xClie22=' + Cliente + '&nCant22=' + CantProd + '&PROD22=' + idProd,
+        data: 'cVenta22=' + Venta + '&xClie22=' + Cliente + '&nCant22=' + CantProd + '&PROD22=' + idProd + '&xdes22=' + DescuentoProd + '&xdesc=' + DescripcionProd ,
         success: function (text) {
             //alert(text);
             console.log(text);
@@ -131,7 +133,7 @@ function creaVentaTotalJson(data, filename) {
         data: "dataArray=" + array2 + "&fileName=vt" + filename,
         success: function (text) {
             if (text == "success") {
-                document.getElementById("demo").innerHTML = '<div class="alert alert-success alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Success!</strong> Pedido asignado </div>';
+                document.getElementById("demo").innerHTML = '<div class="alert alert-success alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Success!</strong> Producto Agregado  <i class="pe-7s-check pe-2x pe-va"></i></div>';
                 //location.href = "venta.php?venta=" + filename;
                 cargaVentaTotal(filename);
             } else {
@@ -148,7 +150,7 @@ function consultaVentaTotal(venta) {
         if (this.readyState == 4 && this.status == 200) {
             var serverRequest = this.responseText;
 
-            
+
             var array = '{"data" : ';
             array += serverRequest.replace("},]", "}]");
             //array += array.replace("{}", "");
@@ -164,7 +166,8 @@ function consultaVentaTotal(venta) {
                 data: "dataArray=" + array2 + "&fileName=vt" + venta,
                 success: function (text) {
                     if (text == "success") {
-                        document.getElementById("demo").innerHTML = '<div class="alert alert-success alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Success!</strong> Pedido asignado </div>';
+                        document.getElementById("demo").innerHTML = '<div class="alert alert-success alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Success!</strong> Acción realizada  <i class="pe-7s-check pe-2x pe-va"></i></div>';
+                        location.href = "venta.php?venta=" + venta;
                     } else {
                         document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> Operacion no realizada Presione F12</div>';
                     }

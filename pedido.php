@@ -59,13 +59,13 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <input type="text" class="form-control form-control-sm" id="Venta" name="Venta" placeholder="Venta" required title="Venta">
+                            <input type="text" class="form-control form-control-sm" id="Venta" name="Venta" placeholder="Venta" required title="Venta" readonly="true">
                             <div class="help-block with-errors text-danger"></div>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <input type="text" class="form-control form-control-sm" id="Estatus" name="Estatus" placeholder="Estatus" required title="Estatus" value="X">
+                            <input type="text" class="form-control form-control-sm" id="Estatus" name="Estatus" placeholder="Estatus" required title="Estatus">
                             <div class="help-block with-errors text-danger"></div>
                         </div>
                     </div>
@@ -77,9 +77,12 @@
                     <input type="text" class="form-control form-control-sm" id="Sucursal" name="Sucursal" placeholder="Sucursal" required title="Sucursal" value="0">
                     <div class="help-block with-errors text-danger"></div>
                 </div>
-                <div class="form-group">
+                <div class="input-group mb-3">
                     <input type="text" class="form-control form-control-sm" id="Vendedor" name="Vendedor" placeholder="Vendedor" required title="Vendedor">
                     <div class="help-block with-errors text-danger"></div>
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ModalVendedor" title="Ver lista de vendedores">Search <span class="pe-7s-search"></span></button> 
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
@@ -327,6 +330,41 @@
     </div>
 </div>
 
+<!-- The Modal -->
+<div class="modal fade" id="ModalVendedor">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Vendedores</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="table-responsive">
+                    <table class="table table-striped" id="tablaVendedor" >
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Puesto</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 
 
 <!-- The Modal -->
@@ -369,6 +407,8 @@
 <script type="text/javascript" src="asset/js/pedido.js"></script>
 <script>
     $(document).ready(function () {
+        //carga catalogo de vendedores
+        loadVendedores();
         //ValidBtnProducto();
         //Carga lista de clientes
         LoadDataJson();
@@ -452,6 +492,8 @@
                 console.log(myObj.data[0].Pedido);
 
                 $('#Venta').val(myObj.data[0].Pedido);
+                $('#Estatus').val(myObj.data[0].Estatus);
+                $('#Dolares').val(myObj.data[0].TC);
             }
             if (this.status == 404) {
                 console.log("error setNumeroVenta()");

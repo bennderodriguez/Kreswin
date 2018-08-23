@@ -3,7 +3,7 @@ $("#crearPedido").validator().on("submit", function (event) {
         // handle the invalid form...
         formError();
         submitMSG(false, "Todos los campos sondd requeridos");
-        alert("Todos los campos son requeridos");
+        alert("Complete los campos requeridos");
     } else {
         // everything looks good!
         event.preventDefault();
@@ -153,7 +153,7 @@ function creaJsonVenta(data, filename) {
         data: "dataArray=" + array2 + "&fileName=" + filename,
         success: function (text) {
             if (text == "success") {
-                document.getElementById("demo").innerHTML = '<div class="alert alert-success alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Success!</strong> Pedido asignado </div>';
+                document.getElementById("demo").innerHTML = '<div class="alert alert-success alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Success!</strong> Pedido asignado <i class="pe-7s-check"></i></div>';
                 location.href = "venta.php?venta=" + filename;
             } else {
                 document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> Operacion no realizada Presione F12</div>';
