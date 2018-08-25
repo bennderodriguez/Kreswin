@@ -1,0 +1,3 @@
+{"data" : [{"Producto" : "127", "Descripcion" : "(DESCONT) VELAD REFACCION GIGANTE #5 VITRALES  (40", "Cantidad" : "        3", "Precio" : "     431.04", "Porcentaje" : "       0.00", "Importe" : "   1,293.12","Neto" : "     1,293.12"},{"Producto" : "066", "Descripcion" : "GERBER VERDURAS  POLLO -ARROZ 113 G", "Cantidad" : "        2", "Precio" : "     202.50", "Porcentaje" : "      10.00", "Importe" : "     405.00","Neto" : "       405.00"}],"Total" : { "TCantidad" : "          5","TImporte" : "     1,698.12","Tieps" : "         0.00","Tiva" : "       206.90","Tsaldo" : "         0.00","TNeto" : "     1,905.02"}
+
+}

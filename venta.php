@@ -410,31 +410,49 @@ include 'headers.php';
     </div>
 </div>
 
-<!-- Modal -->
-<div class="modal fade" id="optionDataRow" role="dialog">
+ <!-- The Modal -->
+  <div class="modal fade" id="dialog">
     <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
-            </div>
-            <div class="modal-body">
-                <p>Some text in the modal.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Editar | Eliminar Producto</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
         </div>
-
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form id="formaEditarProducto" role="form" autocomplete="off">
+                <div class="form-group">
+                  <label>Producto</label>
+                  <input type="text" class="form-control form-control-sm" id="inputEditProduct" readonly="true">
+                </div>
+                <div class="form-group">
+                  <label>Cantidad</label>
+                  <input type="number" class="form-control form-control-sm" id="inputEditCantidad" required min="1" max="99" value="1">
+                </div>
+                <div class="form-group">
+                  <label>Descuento</label>
+                  <input type="number" class="form-control form-control-sm" id="inputEditDescuento" required min="0" max="100" value="0">
+                </div>
+                <button type="button" class="btn btn-outline-primary btn-sm" id="editarProducto">Editar</button>
+                <button type="button" class="btn btn-outline-danger btn-sm" id="eliminarProducto">Eliminar</button>
+            </form>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
     </div>
-</div>
+  </div>
 
-<?php
-include 'footer.php';
-?>
-
+ <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dialog" style="display: none;" id="btnDialog">Open modal</button>
+<?php include 'footer.php'; ?>
+ <script type="text/javascript" src="asset/js/venta.js"></script>
 <script>
     $(document).ready(function () {
 
@@ -498,16 +516,58 @@ include 'footer.php';
             var data = table.row(this).data();
             //alert('You clicked on set' + data.Producto + '\'s row');
             //eliminarProducto(data.Producto);
-            if (confirm("¿Estás seguro que quieres eliminar este producto?")) {
-                eliminarProducto(data.Producto);
-            } else {
-                return false;
-            }
+             //$("#btnDialog").click();
+             confirma(venta, data.Producto, data.Descripcion, data.Cantidad);
+//            if (confirm("¿Estás seguro que quieres eliminar el producto " + data.Descripcion + "?")) {
+//                eliminarProducto(data.Producto);
+//            } else {
+//                return false;
+//            }
 //            falta implementar pop up para que decida si eliminar o actualizar
            // $("#optionDataRow").modal('show');
         });
     }
+function confirma(Venta, producto, descripcion, cantidad){
+    //set input form
+    var str = cantidad;
+    var Cliente = $("#Cliente").val();
+    $('#inputEditProduct').val(descripcion);
+    $('#inputEditCantidad').val(str.trim());
+    //open dialog window
+    $("#btnDialog").click();
+    
+    $("#eliminarProducto").on('click', function (){
+            if (confirm("¿Estás seguro que quieres eliminar el producto?")) {
+                eliminarProducto(producto);
+            } else {
+                return false;
+            }
+    });
+    $("#editarProducto").on('click', function (){
+            document.getElementById("demo").innerHTML = '<div class="alert alert-info alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Espere!</strong> Procesando producto <i class="pe-7s-close-circle pe-spin pe-2x pe-va"></i></div>';
+            var newDescuento = $("#inputEditDescuento").val();
+            var newCantidad = $("#inputEditCantidad").val();
+            $.ajax({
+            type: "POST",
+            url: "getJson/deleteProducto.php",
+            data: "Actualiza=true&cVenta22=" + Venta + "&xClie22=" + Cliente + "&nCant22="+ newCantidad +"&PROD22=" + producto + "&xdes22=" + newDescuento,
+            success: function (text) {
+                consultaVentaTotal(Venta);
+                console.log(text);
+            },
+            error: function (request, status, error) {
+                alert(request.responseText);
+                console.log(request.responseText);
+                console.log(request.status);
+                console.log(request.error);
+                document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> La acción terminó con un error Fatal presione F12</div>';
 
+            }
+        });
+            
+    });
+    
+}
     function eliminarProducto(Producto) {
         document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Espere!</strong> Eliminando producto <i class="pe-7s-close-circle pe-spin pe-2x pe-va"></i></div>';
         var Venta = $("#Venta").val();
@@ -519,7 +579,7 @@ include 'footer.php';
         $.ajax({
             type: "POST",
             url: "getJson/deleteProducto.php",
-            data: "cVenta22=" + Venta + "&xClie22=" + Cliente + "&nCant22=0&PROD22=" + Producto,
+            data: "elimina=true&cVenta22=" + Venta + "&xClie22=" + Cliente + "&nCant22=0&PROD22=" + Producto,
             success: function (text) {
                 consultaVentaTotal(Venta);
                 console.log(text);
@@ -584,4 +644,3 @@ include 'footer.php';
     }
 
 </script>
-<script type="text/javascript" src="asset/js/venta.js"></script>

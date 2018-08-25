@@ -8,7 +8,7 @@ $opciones = array(
         'method' => "GET",
         'header' => "Accept-language: en\r\n" .
         //"Cookie: cCresweb=zrWzurPHtr7f39/f39/LzM3O39/f39+ekY2anQ=="
-          "Cookie: cCresweb=zqvOuLLHtr7f39/f39/LzM3O39/f39+ekY2anQ=="
+          "Cookie: cCresweb=zr66xrDHtr7f39/f39/LzM3O39/f39+ekY2anQ=="
         
     )
 );
