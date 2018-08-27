@@ -13,7 +13,6 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     //*TOKEN WEB*//
 } else {
     echo " You are not logged in ";
-    header('Location: ./index.php');
     exit;
 }
 
@@ -22,7 +21,6 @@ $now = time();
 if ($now > $_SESSION['expire']) {
     session_destroy();
     echo " You are not logged in ";
-    header('Location: ./index.php');
     exit;
 }
 ?>

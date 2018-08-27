@@ -32,9 +32,25 @@ if (empty($_POST["xdes22"])) {
     $xdes22 = $_POST["xdes22"];
 }
 
+if (empty($_POST["xnota122"])) {
+    $xnota122 = null;
+} else {
+    $xnota122 = $_POST["xnota122"];
+}
+if (empty($_POST["xnota222"])) {
+    $xnota222 = null;
+} else {
+    $xnota222 = $_POST["xnota222"];
+}
+if (empty($_POST["xnota322"])) {
+    $xnota322 = null;
+} else {
+    $xnota322 = $_POST["xnota322"];
+}
+
 
 if ($errorMSG == "") {
-    echo file_get_contents('http://focus.acceso.crescloud.com/cgi-bwp/BI2/Menu/FocusLab/flavio/swcrmvd01.bwp?cVenta22='.$cVenta22.'&xClie22='.$xClie22.'&nCant22='.$nCant22.'&PROD22='.$PROD22.'&xdes22='.$xdes22.'&xnota122=hola1&xnota222=hola2&xnota322=hola3', false, $contexto);
+    echo file_get_contents('http://focus.acceso.crescloud.com/cgi-bwp/BI2/Menu/FocusLab/rockjs/swcrmvd01.bwp?cVenta22=' . $cVenta22 . '&xClie22=' . $xClie22 . '&nCant22=' . $nCant22 . '&PROD22=' . $PROD22 . '&xdes22=' . $xdes22 . '&xnota122=' . $xnota122 . '&xnota222='. $xnota222 .'&xnota322='. $xnota322, false, $contexto);
 } else {
     if ($errorMSG == "") {
         echo "Something went wrong :(";

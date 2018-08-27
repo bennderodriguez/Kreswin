@@ -1,6 +1,7 @@
 <?php
 
 include '../resources/trace.php';
+include '../resources/session.php';
 
 // Crear un flujo
 $opciones = array(

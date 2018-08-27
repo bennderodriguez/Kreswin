@@ -15,7 +15,7 @@ if (empty($_POST["cVenta22"])) {
 }
 
 if ($errorMSG == ""){
-   echo file_get_contents('http://focus.acceso.crescloud.com/cgi-bwp/BI2/Menu/FocusLab/rockjs/swcrbvt01.bwp?cVenta22='.$cVenta22, false, $contexto);
+   echo file_get_contents('http://focus.acceso.crescloud.com/cgi-bwp/BI2/Menu/FocusLab/rockjs/swcaped01.bwp?cVenta22='.$cVenta22, false, $contexto);
 }else{
     if($errorMSG == ""){
         echo "Something went wrong :(";

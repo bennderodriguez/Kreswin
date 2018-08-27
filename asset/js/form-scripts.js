@@ -26,7 +26,7 @@ function submitForm() {
         success: function (text) {
             if (text == "success") {
                 formSuccess();
-                $(location).attr('href', 'pedido.php')
+                $(location).attr('href', 'menu.php')
                 $(".loader").fadeIn("slow");
             } else {
                 formError();

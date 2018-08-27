@@ -2,8 +2,9 @@
 /**
  * implementa trace
  */
-include_once './resources/trace.php';
 include_once './resources/session.php';
+include_once './resources/trace.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -39,11 +40,9 @@ include_once './resources/session.php';
         <div class="loader"></div>
         <div id="mySidenav" class="sidenav" style="margin-top:40px">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.php">Registrar</a>
-            <a href="#">Modificar</a>
-            <a href="#">Eliminar</a>
-            <a href="pedido.php">Pedido</a>
-            <a href="venta.php">Venta</a>
+            <a href="menu.php">Menu</a>
+            <a href="ConsultaVentas.php">Consultar Ventas</a>
+            <a href="pedido.php">Crear Pedido</a>
             <a href="resources/logout.php">Salir</a>
         </div>
 

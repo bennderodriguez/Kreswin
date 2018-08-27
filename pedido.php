@@ -87,7 +87,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <label class="switch">
-                            <input type="checkbox" value="S" id="Cotizacion" name="Cotizacion" title="Cotizacion">
+                            <input type="checkbox" value="S" id="Cotizacion" name="Cotizacion" title="Cotizacion" disabled="true">
                             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCotización
                             <span class="slider round"></span>
                         </label>
@@ -114,31 +114,31 @@
                         <div class="row">
                             <div class="col-sm-4">
                                 <label class="switch">
-                                    <input type="checkbox" value="Destino" id="Destino" name="Destino" title="Destino">
+                                    <input type="checkbox" value="Destino" id="Destino" name="Destino" title="Destino" disabled="true">
                                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDestino
                                     <span class="slider round"></span>
                                 </label>
                                 <label class="switch">
-                                    <input type="checkbox" value="Proyecto" id="Proyecto" name="Proyecto" title="Proyecto" >
+                                    <input type="checkbox" value="Proyecto" id="Proyecto" name="Proyecto" title="Proyecto" disabled="true">
                                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspProyecto
                                     <span class="slider round"></span>
                                 </label>
                             </div>
                             <div class="col-sm-4">
                                 <label class="switch">
-                                    <input type="checkbox" value="Dolares" id="Dolares" name="Dolares" title="Dolares">
+                                    <input type="checkbox" value="Dolares" id="Dolares" name="Dolares" title="Dolares" disabled="true">
                                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDolares
                                     <span class="slider round"></span>
                                 </label>
                                 <label class="switch">
-                                    <input type="checkbox" value="S" id="Contado" name="Contado" title="Contado">
+                                    <input type="checkbox" value="S" id="Contado" name="Contado" title="Contado" disabled="true">
                                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspContado
                                     <span class="slider round"></span>
                                 </label>
                             </div>
                             <div class="col-sm-4">
                                 <label class="switch">
-                                    <input type="checkbox" value="Explorar" id="Explorar" name="Explorar" title="Explorar">
+                                    <input type="checkbox" value="Explorar" id="Explorar" name="Explorar" title="Explorar" disabled="true">
                                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspExplorar
                                     <span class="slider round"></span>
                                 </label>
