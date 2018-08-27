@@ -3,6 +3,7 @@
  * implementa trace
  */
 include_once './resources/trace.php';
+include_once './resources/session.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -43,7 +44,7 @@ include_once './resources/trace.php';
             <a href="#">Eliminar</a>
             <a href="pedido.php">Pedido</a>
             <a href="venta.php">Venta</a>
-            <a href="#">Salir</a>
+            <a href="resources/logout.php">Salir</a>
         </div>
 
         <div id="main">
@@ -83,7 +84,7 @@ include_once './resources/trace.php';
                     <span class="pe-7s-info" title="Info"></span>
                     <span class="pe-7s-magic-wand white logo circ"></span-->
 
-                    <img src="asset/images/img_avatar3.png" alt="John Doe" class="rounded-circle" style="width:30px; vertical-align: baseline !important;">
+                    <img src="asset/images/img_avatar3.png" title="<?php echo $usuario; ?>" class="rounded-circle" style="width:30px; vertical-align: baseline !important;">
                 </div>
             </div>
 

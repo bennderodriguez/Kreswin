@@ -75,10 +75,11 @@ function submitForm() {
         success: function (text) {
             //alert(text);
             console.log(text);
+            console.log("************************** swcravt02 ************************");
             var n = text.includes("Credito");
             if (n) {
                 document.getElementById("demo").innerHTML = '<div class="alert alert-info"><strong>Espere</strong> Procesando... Asignando Pedido <i class="pe-7s-config pe-spin pe-2x pe-va"></i></div>';
-                creaJsonVenta(text, Venta)
+                creaJsonVenta(text, Venta, Cliente)
                 /***********************************************/
                 /**
                  * Invoca SetDataVent (swcravt03)
@@ -92,6 +93,7 @@ function submitForm() {
                         var m = text.includes("Modificado");
                         if (n) {
                             console.log("SetDataVent ok");
+                            console.log("************************** swcravt03 ************************");
                         }
                     }
                 });
@@ -127,7 +129,7 @@ function submitMSG(valid, msg) {
     $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 }
 
-function creaJsonVenta(data, filename) {
+function creaJsonVenta(data, filename, Cliente) {
     console.log(data);
     /*Este servicio contiene espam por lo que separamos en cadenas
      * para extraer unicamente el numero del pedido
@@ -153,12 +155,61 @@ function creaJsonVenta(data, filename) {
         data: "dataArray=" + array2 + "&fileName=" + filename,
         success: function (text) {
             if (text == "success") {
+                console.log("************************** creaJsonVenta ************************");
                 document.getElementById("demo").innerHTML = '<div class="alert alert-success alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Success!</strong> Pedido asignado <i class="pe-7s-check"></i></div>';
-                location.href = "venta.php?venta=" + filename;
+                location.href = "venta.php?venta=" + filename + "&cliente=" + Cliente;
             } else {
                 document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> Operacion no realizada Presione F12</div>';
             }
         }
     });
+}
 
+function consultaDatosCliente(venta, cliente) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            var serverRequest = this.responseText;
+
+            /*Este servicio contiene espam por lo que separamos en cadenas
+             * para extraer unicamente el numero del pedido
+             */
+            //1. Separo con split todo lo que este entre [
+            var str = serverRequest;
+            var res = str.split("[");
+            console.log(res[1]);
+            //2. El resultado se parcea nuevamente pero ahoa con ]
+            var str2 = res[1];
+            var res2 = str2.split("]");
+            console.log(res2[0]);
+            //3. ahora se agregan corchetes
+            var array = '{"data" : [';
+            array += res2[0].replace("},]", "}]");
+            //array += array.replace("{}", "");
+            array += ']}';
+            var array2 = array.replace(", {}", "");
+            console.log(array2);
+
+            document.getElementById("demo").innerHTML = array;
+            //se guarda en un archivo json/NumeroVenta.json
+            $.ajax({
+                type: "POST",
+                url: "clean-json/get-url.php",
+                data: "dataArray=" + array2 + "&fileName=" + venta,
+                success: function (text) {
+                    console.log("************************** consultaDatosCliente ************************");
+                    console.log(text);
+                    document.getElementById("demo").innerHTML = '<div class="alert alert-success alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Success!</strong> Pedido asignado <i class="pe-7s-check"></i></div>';
+                    location.href = "venta.php?venta=" + venta + "&cliente=" + cliente;
+                }
+            });
+        } else {
+            document.getElementById("demo").innerHTML = '<div class="alert alert-info"><strong>Espere</strong> Cargando Contenido ... espere <i class="pe-7s-config pe-spin pe-2x pe-va"></i></div>';
+        }
+
+        return array;
+    };
+    xhttp.open("GET", "getJson/getConsultaCliente.php?xVenta2=" + venta + "&xClie2=" + cliente, true);
+    xhttp.send();
+    // The function returns the product of p1 and p2
 }

@@ -15,15 +15,18 @@ function submitForm() {
     // Initiate Variables With Form Content
     var cliente_vida = $("#cliente_vida").val();
     var pass_cv = $("#pass_cv").val();
+    
+    console.log(cliente_vida);
+    console.log(pass_cv);
 
     $.ajax({
         type: "POST",
-        url: "php/form-process.php",
-        data: "p=loginPVI&cliente_vida=" + cliente_vida + "&pass_cv=" + pass_cv,
+        url: "resources/auth.php",
+        data: "UserName=" + cliente_vida + "&Password=" + pass_cv,
         success: function (text) {
             if (text == "success") {
                 formSuccess();
-                $(location).attr('href', 'Rockjs1.0/?p=holaProgress')
+                $(location).attr('href', 'pedido.php')
                 $(".loader").fadeIn("slow");
             } else {
                 formError();

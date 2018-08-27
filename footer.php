@@ -2,6 +2,9 @@
 </div>
 </div>
 
+<div class="clearfix">
+    <span class="float-right text-muted">Versión 1.0.0 <i class="pe-7s-science"></i></span>
+</div>
 <script>
     function openNav() {
         document.getElementById("mySidenav").style.width = "150px";
@@ -32,7 +35,7 @@
 
 <!-- Web Service Login -->
 <script src="asset/js/validator.min.js"></script>
-<!--script type="text/javascript" src="asset/js/consulta.js"></script-->
+<script src="asset/js/form-scripts.js"></script>
 <script>
 
     /**

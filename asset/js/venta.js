@@ -76,7 +76,7 @@ function submitForm() {
                 document.getElementById("demo").innerHTML = '<div class="alert alert-success alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Success!</strong> Producto Agregado</div>';
                 //addRow();
                 //creaVentaTotalJson(text, Venta);
-                consultaVentaTotal(Venta);
+                consultaVentaTotal(Venta, Cliente);
             } else {
                 document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> Producto no Agregado </div>';
 
@@ -144,7 +144,7 @@ function creaVentaTotalJson(data, filename) {
 
 }
 
-function consultaVentaTotal(venta) {
+function consultaVentaTotal(venta, Cliente) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
@@ -167,7 +167,7 @@ function consultaVentaTotal(venta) {
                 success: function (text) {
                     if (text == "success") {
                         document.getElementById("demo").innerHTML = '<div class="alert alert-success alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Success!</strong> Acción realizada  <i class="pe-7s-check pe-2x pe-va"></i></div>';
-                        location.href = "venta.php?venta=" + venta;
+                        location.href = "venta.php?venta=" + venta +"&cliente="+ Cliente ;
                     } else {
                         document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> Operacion no realizada Presione F12</div>';
                     }

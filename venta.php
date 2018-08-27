@@ -468,7 +468,9 @@ include 'headers.php';
         LoadDataNow();
 
         var venta = "<?php echo $_GET["venta"] ?>";
-        cargaPedido();
+        var cliente = "<?php echo $_GET["cliente"] ?>";
+        consultaDatosCliente(venta, cliente);
+        //cargaPedido();
         //********************//
         loadProductosVendidos(venta);
         cargaTotales(venta);
@@ -552,7 +554,7 @@ function confirma(Venta, producto, descripcion, cantidad){
             url: "getJson/deleteProducto.php",
             data: "Actualiza=true&cVenta22=" + Venta + "&xClie22=" + Cliente + "&nCant22="+ newCantidad +"&PROD22=" + producto + "&xdes22=" + newDescuento,
             success: function (text) {
-                consultaVentaTotal(Venta);
+                consultaVentaTotal(Venta, Cliente);
                 console.log(text);
             },
             error: function (request, status, error) {
@@ -581,7 +583,7 @@ function confirma(Venta, producto, descripcion, cantidad){
             url: "getJson/deleteProducto.php",
             data: "elimina=true&cVenta22=" + Venta + "&xClie22=" + Cliente + "&nCant22=0&PROD22=" + Producto,
             success: function (text) {
-                consultaVentaTotal(Venta);
+                consultaVentaTotal(Venta, Cliente);
                 console.log(text);
             },
             error: function (request, status, error) {
@@ -610,7 +612,7 @@ function confirma(Venta, producto, descripcion, cantidad){
 
 
                 $('#Venta').val(myObj.data[0].Pedido);
-                $('#Estatus').val(myObj.data[0].Estatus);
+                $('#Estatus').val("P");
                 $('#Cliente').val(myObj.data[0].Cliente);
                 $('#Vendedor').val(myObj.data[0].Vendedor);
                 $('#Sucursal').val(myObj.data[0].Sucursal);
@@ -642,5 +644,52 @@ function confirma(Venta, producto, descripcion, cantidad){
         xmlhttp.open("GET", "json/" + pedido + ".json", true);
         xmlhttp.send();
     }
+    
+    function consultaDatosCliente(venta, cliente) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            var serverRequest = this.responseText;
+
+            /*Este servicio contiene espam por lo que separamos en cadenas
+             * para extraer unicamente el numero del pedido
+             */
+            //1. Separo con split todo lo que este entre [
+            var str = serverRequest;
+            var res = str.split("[");
+            console.log(res[1]);
+            //2. El resultado se parcea nuevamente pero ahoa con ]
+            var str2 = res[1];
+            var res2 = str2.split("]");
+            console.log(res2[0]);
+            //3. ahora se agregan corchetes
+            var array = '{"data" : [';
+            array += res2[0].replace("},]", "}]");
+            //array += array.replace("{}", "");
+            array += ']}';
+            var array2 = array.replace(", {}", "");
+            console.log(array2);
+
+            document.getElementById("demo").innerHTML = "";
+            //se guarda en un archivo json/NumeroVenta.json
+            $.ajax({
+                type: "POST",
+                url: "clean-json/get-url.php",
+                data: "dataArray=" + array2 + "&fileName=" + venta,
+                success: function (text) {
+                    console.log("************************** consultaDatosCliente ************************");
+                    cargaPedido();
+                }
+            });
+        } else {
+            document.getElementById("demo").innerHTML = '<div class="alert alert-info"><strong>Espere</strong> Cargando Contenido ... espere <i class="pe-7s-config pe-spin pe-2x pe-va"></i></div>';
+        }
+
+        return array;
+    };
+    xhttp.open("GET", "getJson/getConsultaCliente.php?xVenta2=" + venta + "&xClie2=" + cliente, true);
+    xhttp.send();
+    // The function returns the product of p1 and p2
+}
 
 </script>
