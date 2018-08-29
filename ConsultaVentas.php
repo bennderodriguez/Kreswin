@@ -28,7 +28,7 @@
 
 <!-- The Modal -->
 <div class="modal fade" id="dialog">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
 
             <!-- Modal Header -->
@@ -48,9 +48,71 @@
                         <label># Cliente</label>
                         <input type="text" class="form-control form-control-sm" id="inputCliente" readonly="true">
                     </div>
-                    <button type="button" class="btn btn-outline-success btn-sm" id="btnConsulta">Consultar Venta</button>
-                    <button type="button" class="btn btn-outline-primary btn-sm" id="btnCancela">Cancelar Venta</button>
-                    <button type="button" class="btn btn-outline-danger btn-sm" id="btnElimina">Eliminar Venta</button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-outline-success btn-sm" id="btnConsulta">Consultar Venta</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm" id="btnCancela">Cancelar Venta</button>
+                        <button type="button" class="btn btn-outline-danger btn-sm" id="btnElimina">Eliminar Venta</button>
+                        <button type="button" class="btn btn-outline-info btn-sm" id="btnRemisiona">Remisionar|Facturar Venta</button>
+                    </div>
+
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="ModalRemisionar">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Remisionar Venta</h4>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form id="formaEditarProducto" role="form" autocomplete="off">
+                    <div class="form-group">
+                        <label># Venta</label>
+                        <input type="text" class="form-control form-control-sm" id="inputVenta2" readonly="true">
+                    </div>
+                    <div class="form-group">
+                        <label># Cliente</label>
+                        <input type="text" class="form-control form-control-sm" id="inputCliente2" readonly="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="sel1">Seleccione el método de Pago</label>
+                        <select class="form-control" id="sel1">
+                            <option value="1">T. Debito</option>
+                            <option value="2">Visa</option>
+                            <option value="3">Mastercard</option>
+                            <option value="4">American Express</option>
+                            <option value="4">Dinners</option>
+                            <option value="5">Dolares</option>
+                            <option value="6">Otros</option>
+                            <option value="7">CS SHBC</option>
+                            <option value="8">CB Banamex</option>
+                            <option value="9">CV BBV-Bancomer</option>
+                            <option value="10">Dolares</option>
+                            <option value="11">CI BBV-Scotia Inverlay</option>
+                            <option value="12">CX Santander</option>
+                            <option value="13">CN Banorte</option>
+                            <option value="14">CE IXE</option>
+                            <option value="15">CT Inbursa</option>
+                            <option value="16">CH Otros Bancos</option>
+                        </select>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-outline-success btn-sm" id="btnRemisionaNow">Remisionar Venta</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm" id="btnFacturarNow">Facturar Venta</button>
+                    </div>
 
             </div>
 
@@ -66,6 +128,7 @@
 <?php include 'footer.php'; ?>
 
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dialog" style="display: none;" id="btnDialog">Open modal</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalRemisionar" style="display: none;" id="btnRem">Open modal</button>
 <script>
     $(document).ready(function () {
         consultaVentas();
@@ -158,16 +221,82 @@
                 return false;
             }
         });
-        
+
         $("#btnConsulta").on('click', function () {
-            location.href = "venta.php?venta=" + Venta +"&cliente="+ Cliente ;
+            location.href = "venta.php?venta=" + Venta + "&cliente=" + Cliente;
         });
 
-
+        $("#btnRemisiona").on('click', function () {
+            $("#btnDialog").click();
+            $("#btnRem").click();
+            preRemision(Venta, Cliente);
+        });
     }
 
+    function preRemision(Venta, Cliente) {
+        $('#inputVenta2').val(Venta);
+        $('#inputCliente2').val(Cliente);
+
+        $("#btnRemisionaNow").on('click', function () {
+            if (confirm("¿Estás seguro que quiere Remisionar la Venta?")) {
+                //sel1
+                var tipop = $("#sel1").val();
+                var Accion = "R";
+                $('#inputCliente2').val(Cliente);
+                console.log(Venta);
+                console.log(Accion);
+                console.log(tipop);
+                Remisiona(Venta, Accion, tipop);
+            } else {
+                return false;
+            }
+        });
+        $("#btnFacturarNow").on('click', function () {
+            if (confirm("¿Estás seguro que quiere Facturar la Venta?")) {
+                //sel1
+                var tipop = $("#sel1").val();
+                var Accion = "F";
+                $('#inputCliente2').val(Cliente);
+                console.log(Venta);
+                console.log(Accion);
+                console.log(tipop);
+                Remisiona(Venta, Accion, tipop);
+            } else {
+                return false;
+            }
+        });
+    }
+
+    function Remisiona(Venta, accion, tipop) {
+        $("#btnRem").click();
+        document.getElementById("demo").innerHTML = '<div class="alert alert-info alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Espere!</strong> Remisionando venta <i class="pe-7s-config pe-spin pe-2x pe-va"></i></div>';
+        $.ajax({
+            type: "POST",
+            url: "getJson/remisionaVenta.php",
+            data: "RemisionaVenta=true&cVenta22=" + Venta + "&cPago="+ tipop + "&cTipop=" + accion,
+            success: function (text) {
+                console.log(text);
+                var n = text.includes("Estatus");
+                if (n) {
+                    document.getElementById("demo").innerHTML = '<div class="alert alert-success alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Success!</strong> Acción realizada  <i class="pe-7s-check pe-2x pe-va"></i></div>';
+                    //location.reload();
+                } else {
+                    document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> La acción terminó con un error Fatal presione F12</div>';
+
+                }
+            },
+            error: function (request, status, error) {
+                alert(request.responseText);
+                console.log(request.responseText);
+                console.log(request.status);
+                console.log(request.error);
+                document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> La acción terminó con un error Fatal presione F12</div>';
+
+            }
+        });
+    }
     function EliminaVenta(Venta) {
-        document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Espere!</strong> Eliminando venta <i class="pe-7s-close-circle pe-spin pe-2x pe-va"></i></div>';
+        document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Espere!</strong> Eliminando venta <i class="pe-7s-config pe-spin pe-2x pe-va"></i></div>';
         $.ajax({
             type: "POST",
             url: "getJson/deleteVenta.php",
@@ -195,7 +324,7 @@
     }
 
     function CancelaVenta(Venta) {
-        document.getElementById("demo").innerHTML = '<div class="alert alert-secondary alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Espere!</strong> Cancelando venta <i class="pe-7s-close-circle pe-spin pe-2x pe-va"></i></div>';
+        document.getElementById("demo").innerHTML = '<div class="alert alert-secondary alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Espere!</strong> Cancelando venta <i class="pe-7s-config pe-spin pe-2x pe-va"></i></div>';
         $.ajax({
             type: "POST",
             url: "getJson/cancelaVenta.php",

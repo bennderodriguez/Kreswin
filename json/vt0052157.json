@@ -1,0 +1,3 @@
+{"data" :  [{"Producto" : "6148", "Descripcion" : "CONSOMATE CUBO 8 /11GRS.(24)", "Cantidad" : "        1", "Precio" : "       0.00", "Porcentaje" : "      20.00", "Importe" : "      12.00","Neto" : "        12.00"},{"Producto" : "015", "Descripcion" : "CARIBE COOLER MARACUYA 300 ML (24)", "Cantidad" : "        1", "Precio" : "       0.00", "Porcentaje" : "      10.00", "Importe" : "     240.53","Neto" : "       240.53"}],"Total" : { "TCantidad" : "          2","TImporte" : "       252.53","Tieps" : "         0.00","Tiva" : "        38.49","Tsaldo" : "         0.00","TNeto" : "       291.01"}
+
+}
