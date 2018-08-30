@@ -67,7 +67,7 @@ function submitForm() {
     $.ajax({
         type: "POST",
         url: "getJson/setProducto.php",
-        data: 'cVenta22=' + Venta + '&xClie22=' + Cliente + '&nCant22=' + CantProd + '&PROD22=' + idProd + '&xdes22=' + DescuentoProd + '&xdesc=' + DescripcionProd ,
+        data: 'cVenta22=' + Venta + '&xClie22=' + Cliente + '&nCant22=' + CantProd + '&PROD22=' + idProd + '&xdes22=' + DescuentoProd + '&xdesc=' + DescripcionProd,
         success: function (text) {
             //alert(text);
             console.log(text);
@@ -167,7 +167,7 @@ function consultaVentaTotal(venta, Cliente) {
                 success: function (text) {
                     if (text == "success") {
                         document.getElementById("demo").innerHTML = '<div class="alert alert-success alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Success!</strong> Acción realizada  <i class="pe-7s-check pe-2x pe-va"></i></div>';
-                        location.href = "venta.php?venta=" + venta +"&cliente="+ Cliente ;
+                        location.href = "venta.php?venta=" + venta + "&cliente=" + Cliente;
                     } else {
                         document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> Operacion no realizada Presione F12</div>';
                     }

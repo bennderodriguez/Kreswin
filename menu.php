@@ -20,14 +20,14 @@
     </form>
 
     <div class="row">
-        <div class="col-4"><button class="btna btn-primary" onclick="location.href = 'ConsultaVentas.php'"><i class="pe-7s-shopbag"></i> Ventas <br><span id="countVentas" class="countVentas"></span></button></div>
-        <div class="col-4"><button class="btna btn-success"><i class="pe-7s-users"></i> Clientes <span id="countCliente" class="countCliente"></></button></div>
-        <div class="col-4"><button class="btna btn-info"><i class="pe-7s-car"></i> Rutas<br> <span id="countRuta" class="countRuta"></></button></div>
+        <div class="col-sm-4"><button class="btna btn-primary" onclick="location.href = 'ConsultaVentas.php'"><i class="pe-7s-shopbag"></i> Ventas <br><span id="countVentas" class="countVentas"></span></button></div>
+        <div class="col-sm-4"><button class="btna btn-success"><i class="pe-7s-users"></i> Clientes <span id="countCliente" class="countCliente"></></button></div>
+        <div class="col-sm-4"><button class="btna btn-info"><i class="pe-7s-car"></i> Rutas<br> <span id="countRuta" class="countRuta"></></button></div>
     </div>
 
     <div class="row">
-        <div class="col-4"><button class="btna btn-default"><i class="pe-7s-gift"></i> Productos<br> <span id="countProductos" class="countProductos"></></button></div>       
-        <div class="col-4"><button class="btna btn-warning"><i class="pe-7s-smile"></i> Vendedores<br> <span id="countVendedor" class="countVendedor"></></button></div>
+        <div class="col-sm-4"><button class="btna btn-default"><i class="pe-7s-gift"></i> Productos<br> <span id="countProductos" class="countProductos"></></button></div>       
+        <div class="col-sm-4"><button class="btna btn-warning"><i class="pe-7s-smile"></i> Vendedores<br> <span id="countVendedor" class="countVendedor"></></button></div>
     </div>
 
 </div>

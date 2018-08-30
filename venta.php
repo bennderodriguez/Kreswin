@@ -410,52 +410,58 @@ include 'headers.php';
     </div>
 </div>
 
- <!-- The Modal -->
-  <div class="modal fade" id="dialog">
+<!-- The Modal -->
+<div class="modal fade" id="dialog">
     <div class="modal-dialog">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Editar | Eliminar Producto</h4>
-          <button type="button" class="close" data-dismiss="modal">×</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-            <form id="formaEditarProducto" role="form" autocomplete="off">
-                <div class="form-group">
-                  <label>Producto</label>
-                  <input type="text" class="form-control form-control-sm" id="inputEditProduct" readonly="true">
-                </div>
-                <div class="form-group">
-                  <label>Cantidad</label>
-                  <input type="number" class="form-control form-control-sm" id="inputEditCantidad" required min="1" max="99" value="1">
-                </div>
-                <div class="form-group">
-                  <label>Descuento</label>
-                  <input type="number" class="form-control form-control-sm" id="inputEditDescuento" required min="0" max="100" value="0">
-                </div>
-                <button type="button" class="btn btn-outline-primary btn-sm" id="editarProducto">Editar</button>
-                <button type="button" class="btn btn-outline-danger btn-sm" id="eliminarProducto">Eliminar</button>
-            </form>
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
+        <div class="modal-content">
 
- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dialog" style="display: none;" id="btnDialog">Open modal</button>
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Editar | Eliminar Producto</h4>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form id="formaEditarProducto" role="form" autocomplete="off">
+                    <div class="form-group">
+                        <label>Producto</label>
+                        <input type="text" class="form-control form-control-sm" id="inputEditProduct" readonly="true">
+                    </div>
+                    <div class="form-group">
+                        <label>Cantidad</label>
+                        <input type="number" class="form-control form-control-sm" id="inputEditCantidad" required min="1" max="99" value="1">
+                    </div>
+                    <div class="form-group">
+                        <label>Descuento</label>
+                        <input type="number" class="form-control form-control-sm" id="inputEditDescuento" required min="0" max="100" value="0">
+                    </div>
+                    <button type="button" class="btn btn-outline-primary btn-sm" id="editarProducto">Editar</button>
+                    <button type="button" class="btn btn-outline-danger btn-sm" id="eliminarProducto">Eliminar</button>
+                </form>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dialog" style="display: none;" id="btnDialog">Open modal</button>
 <?php include 'footer.php'; ?>
- <script type="text/javascript" src="asset/js/venta.js"></script>
+<script type="text/javascript" src="asset/js/venta.js"></script>
 <script>
     $(document).ready(function () {
-
+<?php
+if (empty($_GET["gc"])) {
+    //Noting to do
+} else {
+    echo 'consultaVentaTotal("' . $_GET["venta"] . '", "' . $_GET["cliente"] . '");';
+}
+?>
         //Valida boton agregar
         ValidBtnProducto();
         //Carga lista de clientes
@@ -518,83 +524,93 @@ include 'headers.php';
             var data = table.row(this).data();
             //alert('You clicked on set' + data.Producto + '\'s row');
             //eliminarProducto(data.Producto);
-             //$("#btnDialog").click();
-             confirma(venta, data.Producto, data.Descripcion, data.Cantidad);
+            //$("#btnDialog").click();
+            confirma(venta, data.Producto, data.Descripcion, data.Cantidad);
 //            if (confirm("¿Estás seguro que quieres eliminar el producto " + data.Descripcion + "?")) {
 //                eliminarProducto(data.Producto);
 //            } else {
 //                return false;
 //            }
 //            falta implementar pop up para que decida si eliminar o actualizar
-           // $("#optionDataRow").modal('show');
+            // $("#optionDataRow").modal('show');
         });
     }
-function confirma(Venta, producto, descripcion, cantidad){
-    //set input form
-    var str = cantidad;
-    var Cliente = $("#Cliente").val();
-    $('#inputEditProduct').val(descripcion);
-    $('#inputEditCantidad').val(str.trim());
-    //open dialog window
-    $("#btnDialog").click();
-    
-    $("#eliminarProducto").on('click', function (){
+    function confirma(Venta, producto, descripcion, cantidad) {
+        //set input form
+        var str = cantidad;
+        var Cliente = $("#Cliente").val();
+        $('#inputEditProduct').val(descripcion);
+        $('#inputEditCantidad').val(str.trim());
+        //open dialog window
+        $("#btnDialog").click();
+
+        $("#eliminarProducto").on('click', function () {
             if (confirm("¿Estás seguro que quieres eliminar el producto?")) {
                 eliminarProducto(producto);
             } else {
                 return false;
             }
-    });
-    $("#editarProducto").on('click', function (){
+        });
+        $("#editarProducto").on('click', function () {
             document.getElementById("demo").innerHTML = '<div class="alert alert-info alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Espere!</strong> Procesando producto <i class="pe-7s-close-circle pe-spin pe-2x pe-va"></i></div>';
             var newDescuento = $("#inputEditDescuento").val();
             var newCantidad = $("#inputEditCantidad").val();
+            var nota1 = $("#Nota1").val();
+            var nota2 = $("#Nota2").val();
+            var nota3 = $("#Nota3").val();
             $.ajax({
-            type: "POST",
-            url: "getJson/deleteProducto.php",
-            data: "Actualiza=true&cVenta22=" + Venta + "&xClie22=" + Cliente + "&nCant22="+ newCantidad +"&PROD22=" + producto + "&xdes22=" + newDescuento,
-            success: function (text) {
-                consultaVentaTotal(Venta, Cliente);
-                console.log(text);
-            },
-            error: function (request, status, error) {
-                alert(request.responseText);
-                console.log(request.responseText);
-                console.log(request.status);
-                console.log(request.error);
-                document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> La acción terminó con un error Fatal presione F12</div>';
+                type: "POST",
+                url: "getJson/deleteProducto.php",
+                data: "Actualiza=true&cVenta22=" + Venta + "&xClie22=" + Cliente + "&nCant22=" + newCantidad + "&PROD22=" + producto + "&xdes22=" + newDescuento + "&xnota122=" + nota1 + "&xnota222=" + nota2 + "&xnota322=" + nota3,
+                success: function (text) {
+                    consultaVentaTotal(Venta, Cliente);
+                    console.log(text);
+                },
+                error: function (request, status, error) {
+                    alert(request.responseText);
+                    console.log(request.responseText);
+                    console.log(request.status);
+                    console.log(request.error);
+                    document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> La acción terminó con un error Fatal presione F12</div>';
 
-            }
+                }
+            });
+
         });
-            
-    });
-    
-}
+
+    }
     function eliminarProducto(Producto) {
-        document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Espere!</strong> Eliminando producto <i class="pe-7s-close-circle pe-spin pe-2x pe-va"></i></div>';
-        var Venta = $("#Venta").val();
-        var Cliente = $("#Cliente").val();
-        var cantidad = 0;
-        console.log(Producto);
-        console.log(Venta);
-        console.log(cantidad);
-        $.ajax({
-            type: "POST",
-            url: "getJson/deleteProducto.php",
-            data: "elimina=true&cVenta22=" + Venta + "&xClie22=" + Cliente + "&nCant22=0&PROD22=" + Producto,
-            success: function (text) {
-                consultaVentaTotal(Venta, Cliente);
-                console.log(text);
-            },
-            error: function (request, status, error) {
-                alert(request.responseText);
-                console.log(request.responseText);
-                console.log(request.status);
-                console.log(request.error);
-                document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> La acción terminó con un error Fatal presione F12</div>';
+        var Estatus = $("#Estatus").val();
+        if (Estatus.includes("R") || Estatus.includes("F") || Estatus.includes("0") || Estatus.includes("X")) {
+            document.getElementById("demo").innerHTML = '<div class="alert alert-warning alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Warning!</strong> Imposible realizar esta acción  <i class="pe-7s-shield pe-2x pe-va"></i><br> La Venta está remisionada, facturada o cancelada</div>';
+        } else {
+            //si la venta no esta remisionada , facturada, o canceladapermite cambios
+            document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Espere!</strong> Eliminando producto <i class="pe-7s-close-circle pe-spin pe-2x pe-va"></i></div>';
+            var Venta = $("#Venta").val();
+            var Cliente = $("#Cliente").val();
+            var cantidad = 0;
+            console.log(Producto);
+            console.log(Venta);
+            console.log(cantidad);
+            $.ajax({
+                type: "POST",
+                url: "getJson/deleteProducto.php",
+                data: "elimina=true&cVenta22=" + Venta + "&xClie22=" + Cliente + "&nCant22=0&PROD22=" + Producto,
+                success: function (text) {
+                    consultaVentaTotal(Venta, Cliente);
+                    console.log(text);
+                },
+                error: function (request, status, error) {
+                    alert(request.responseText);
+                    console.log(request.responseText);
+                    console.log(request.status);
+                    console.log(request.error);
+                    document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> La acción terminó con un error Fatal presione F12</div>';
 
-            }
-        });
+                }
+            });
+        }
+
     }
 
     function cargaPedido() {
@@ -612,7 +628,7 @@ function confirma(Venta, producto, descripcion, cantidad){
 
 
                 $('#Venta').val(myObj.data[0].Pedido);
-                $('#Estatus').val("P");
+                $('#Estatus').val(myObj.data[0].Estatus);
                 $('#Cliente').val(myObj.data[0].Cliente);
                 $('#Vendedor').val(myObj.data[0].Vendedor);
                 $('#Sucursal').val(myObj.data[0].Sucursal);
@@ -644,52 +660,52 @@ function confirma(Venta, producto, descripcion, cantidad){
         xmlhttp.open("GET", "json/" + pedido + ".json", true);
         xmlhttp.send();
     }
-    
+
     function consultaDatosCliente(venta, cliente) {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            var serverRequest = this.responseText;
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var serverRequest = this.responseText;
 
-            /*Este servicio contiene espam por lo que separamos en cadenas
-             * para extraer unicamente el numero del pedido
-             */
-            //1. Separo con split todo lo que este entre [
-            var str = serverRequest;
-            var res = str.split("[");
-            console.log(res[1]);
-            //2. El resultado se parcea nuevamente pero ahoa con ]
-            var str2 = res[1];
-            var res2 = str2.split("]");
-            console.log(res2[0]);
-            //3. ahora se agregan corchetes
-            var array = '{"data" : [';
-            array += res2[0].replace("},]", "}]");
-            //array += array.replace("{}", "");
-            array += ']}';
-            var array2 = array.replace(", {}", "");
-            console.log(array2);
+                /*Este servicio contiene espam por lo que separamos en cadenas
+                 * para extraer unicamente el numero del pedido
+                 */
+                //1. Separo con split todo lo que este entre [
+                var str = serverRequest;
+                var res = str.split("[");
+                console.log(res[1]);
+                //2. El resultado se parcea nuevamente pero ahoa con ]
+                var str2 = res[1];
+                var res2 = str2.split("]");
+                console.log(res2[0]);
+                //3. ahora se agregan corchetes
+                var array = '{"data" : [';
+                array += res2[0].replace("},]", "}]");
+                //array += array.replace("{}", "");
+                array += ']}';
+                var array2 = array.replace(", {}", "");
+                console.log(array2);
 
-            document.getElementById("demo").innerHTML = "";
-            //se guarda en un archivo json/NumeroVenta.json
-            $.ajax({
-                type: "POST",
-                url: "clean-json/get-url.php",
-                data: "dataArray=" + array2 + "&fileName=" + venta,
-                success: function (text) {
-                    console.log("************************** consultaDatosCliente ************************");
-                    cargaPedido();
-                }
-            });
-        } else {
-            document.getElementById("demo").innerHTML = '<div class="alert alert-info"><strong>Espere</strong> Cargando Contenido ... espere <i class="pe-7s-config pe-spin pe-2x pe-va"></i></div>';
-        }
+                document.getElementById("demo").innerHTML = "";
+                //se guarda en un archivo json/NumeroVenta.json
+                $.ajax({
+                    type: "POST",
+                    url: "clean-json/get-url.php",
+                    data: "dataArray=" + array2 + "&fileName=" + venta,
+                    success: function (text) {
+                        console.log("************************** consultaDatosCliente ************************");
+                        cargaPedido();
+                    }
+                });
+            } else {
+                document.getElementById("demo").innerHTML = '<div class="alert alert-info"><strong>Espere</strong> Cargando Contenido ... espere <i class="pe-7s-config pe-spin pe-2x pe-va"></i></div>';
+            }
 
-        return array;
-    };
-    xhttp.open("GET", "getJson/getConsultaCliente.php?xVenta2=" + venta + "&xClie2=" + cliente, true);
-    xhttp.send();
-    // The function returns the product of p1 and p2
-}
+            return array;
+        };
+        xhttp.open("GET", "getJson/getConsultaCliente.php?xVenta2=" + venta + "&xClie2=" + cliente, true);
+        xhttp.send();
+        // The function returns the product of p1 and p2
+    }
 
 </script>

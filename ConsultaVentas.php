@@ -72,7 +72,7 @@
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title">Remisionar Venta</h4>
+                <h4 class="modal-title">Remisionar | Facturar Venta</h4>
                 <button type="button" class="close" data-dismiss="modal">×</button>
             </div>
 
@@ -90,23 +90,24 @@
                     <div class="form-group">
                         <label for="sel1">Seleccione el método de Pago</label>
                         <select class="form-control" id="sel1">
-                            <option value="1">T. Debito</option>
-                            <option value="2">Visa</option>
-                            <option value="3">Mastercard</option>
-                            <option value="4">American Express</option>
-                            <option value="4">Dinners</option>
-                            <option value="5">Dolares</option>
-                            <option value="6">Otros</option>
-                            <option value="7">CS SHBC</option>
-                            <option value="8">CB Banamex</option>
-                            <option value="9">CV BBV-Bancomer</option>
-                            <option value="10">Dolares</option>
-                            <option value="11">CI BBV-Scotia Inverlay</option>
-                            <option value="12">CX Santander</option>
-                            <option value="13">CN Banorte</option>
-                            <option value="14">CE IXE</option>
-                            <option value="15">CT Inbursa</option>
-                            <option value="16">CH Otros Bancos</option>
+                            <option value="1">Efectivo</option>
+                            <option value="2" selected="true">T. Debito</option>
+                            <option value="3">Visa</option>
+                            <option value="4">Mastercard</option>
+                            <option value="5">American Express</option>
+                            <option value="6">Dinners</option>
+                            <option value="7">Dolares</option>
+                            <option value="8">Otros</option>
+                            <option value="9">CS SHBC</option>
+                            <option value="10">CB Banamex</option>
+                            <option value="11">CV BBV-Bancomer</option>
+                            <option value="12">Dolares</option>
+                            <option value="13">CI BBV-Scotia Inverlay</option>
+                            <option value="14">CX Santander</option>
+                            <option value="15">CN Banorte</option>
+                            <option value="16">CE IXE</option>
+                            <option value="17">CT Inbursa</option>
+                            <option value="18">CH Otros Bancos</option>
                         </select>
                     </div>
                     <div class="btn-group">
@@ -146,11 +147,11 @@
                 //1. Separo con split todo lo que este entre [
                 var str = serverRequest;
                 var res = str.split("[");
-                console.log(res[1]);
+                //console.log(res[1]);
                 //2. El resultado se parcea nuevamente pero ahoa con ]
                 var str2 = res[1];
                 var res2 = str2.split("]");
-                console.log(res2[0]);
+                //console.log(res2[0]);
                 //3. ahora se agregan corchetes
                 var array = '{"data" : [';
                 array += res2[0].replace("},]", "}]");
@@ -223,7 +224,7 @@
         });
 
         $("#btnConsulta").on('click', function () {
-            location.href = "venta.php?venta=" + Venta + "&cliente=" + Cliente;
+            location.href = "venta.php?venta=" + Venta + "&cliente=" + Cliente + "&gc=true";
         });
 
         $("#btnRemisiona").on('click', function () {
@@ -269,21 +270,26 @@
 
     function Remisiona(Venta, accion, tipop) {
         $("#btnRem").click();
-        document.getElementById("demo").innerHTML = '<div class="alert alert-info alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Espere!</strong> Remisionando venta <i class="pe-7s-config pe-spin pe-2x pe-va"></i></div>';
+        document.getElementById("demo").innerHTML = '<div class="alert alert-info alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Espere!</strong> Procesando Solicitud <i class="pe-7s-config pe-spin pe-2x pe-va"></i></div>';
         $.ajax({
             type: "POST",
             url: "getJson/remisionaVenta.php",
-            data: "RemisionaVenta=true&cVenta22=" + Venta + "&cPago="+ tipop + "&cTipop=" + accion,
+            data: "RemisionaVenta=true&cVenta22=" + Venta + "&cPago=" + tipop + "&cTipop=" + accion,
             success: function (text) {
                 console.log(text);
-                var n = text.includes("Estatus");
-                if (n) {
+                if (text.includes("Remision")) {
                     document.getElementById("demo").innerHTML = '<div class="alert alert-success alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Success!</strong> Acción realizada  <i class="pe-7s-check pe-2x pe-va"></i></div>';
                     //location.reload();
-                } else {
-                    document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> La acción terminó con un error Fatal presione F12</div>';
-
-                }
+                } else if (text.includes("La venta ya esta Remisionada")) {
+                    document.getElementById("demo").innerHTML = '<div class="alert alert-warning alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Warning!</strong> La venta ya esta Remisionada  <i class="pe-7s-shield pe-2x pe-va"></i></div>';
+                    //location.reload();
+                } else if (text.includes("La venta ya esta Facturada")) {
+                    document.getElementById("demo").innerHTML = '<div class="alert alert-warning alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Warning!</strong> La venta ya esta Facturada  <i class="pe-7s-shield pe-2x pe-va"></i></div>';
+                    //location.reload();
+                } else if (text.includes("Factura")) {
+                    document.getElementById("demo").innerHTML = '<div class="alert alert-success alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Success!</strong> Acción realizada  <i class="pe-7s-check pe-2x pe-va"></i></div>';
+                    //location.reload();
+                } 
             },
             error: function (request, status, error) {
                 alert(request.responseText);
@@ -303,9 +309,12 @@
             data: "eliminaVenta=true&cVenta22=" + Venta,
             success: function (text) {
                 console.log(text);
-                var n = text.includes("eliminado");
-                if (n) {
+                if (text.includes("Exito")) {
                     document.getElementById("demo").innerHTML = '<div class="alert alert-success alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Success!</strong> Acción realizada  <i class="pe-7s-check pe-2x pe-va"></i></div>';
+                    //location.reload();
+                }
+                if (text.includes("Error")) {
+                    document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> El pedido  esta remisionado, facturado o no existe <i class="pe-7s-shield pe-2x pe-va"></i></div>';
                     //location.reload();
                 } else {
                     document.getElementById("demo").innerHTML = '<div class="alert alert-danger alert-dismissible">   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>   <strong>Error!</strong> La acción terminó con un error Fatal presione F12</div>';

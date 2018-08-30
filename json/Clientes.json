@@ -5362,20 +5362,6 @@
             "Vendedor": "A10",
             "Nacion": "MEX"
         }, {
-            "Cliente": "000382",
-            "Nombre": "ABARROTERA TEMIXCO, S.A. DE C.V.",
-            "Nombre2": "RUBEN ARIZMENDI",
-            "Calle": "AV. EMILIANO ZAPATA KM 84 # 87",
-            "Colonia": "CENTRO",
-            "CP": "62580",
-            "Ciudad": "TEMIXCO",
-            "Clasifica": "1",
-            "Tipo": "004",
-            "Contacto": "RUBEN ARIZMENDI",
-            "Telefono": "",
-            "Vendedor": "A10",
-            "Nacion": "MEX"
-        }, {
             "Cliente": "000383",
             "Nombre": "MARCO VINICIO REYES BASTIDA",
             "Nombre2": "SUPER LA CONFIANZA",
@@ -15342,6 +15328,20 @@
             "Contacto": ".",
             "Telefono": "744 501 9592",
             "Vendedor": "A07",
+            "Nacion": "MEX"
+        }, {
+            "Cliente": "005192",
+            "Nombre": "ABARROTERA TEMIXCO, S.A. DE C.V.",
+            "Nombre2": "RUBEN ARIZMENDI",
+            "Calle": "AV. EMILIANO ZAPATA KM 84 # 87",
+            "Colonia": "CENTRO",
+            "CP": "62580",
+            "Ciudad": "TEMIXCO",
+            "Clasifica": "1",
+            "Tipo": "004",
+            "Contacto": "RUBEN ARIZMENDI",
+            "Telefono": "",
+            "Vendedor": "A10",
             "Nacion": "MEX"
         }]
 }

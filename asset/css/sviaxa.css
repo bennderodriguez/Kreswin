@@ -86,9 +86,6 @@ h1 { font-family: Raleway; font-size: 24px; font-style: normal; font-variant: no
 }
 
 
-@media (min-width: 576px)
-{}
-
 .cfos {
     color: #3873ae;
 }
@@ -201,4 +198,11 @@ input:checked + .slider:before {
 .btna:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+@media (max-width: 576px)
+{
+    .mn-rigth{display: none}
+    .mn-left{display: flex}
+    
 }

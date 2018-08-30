@@ -71,12 +71,12 @@ include_once './resources/trace.php';
 
 
             <div class=" navbar bg-light fixed-top" style="color: #005689 !important; padding-bottom: 0; padding-top: 0;">
-                <div class="float-left">
+                <div class="float-left mn-left">
                     <span class="menuicon" onclick="openNav()" style="text-align: center; font-size: 30px; padding-left: 15px;">☰</span>
                     <a class="navbar-brand" href="#">&nbsp&nbsp&nbsp<img src="asset/images/sniglet.png" width="7%" alt="RockJS Framework" style="vertical-align: baseline !important;"></a>
                 </div>
 
-                <div class="float-right">
+                <div class="float-right mn-rigth">
                     Focus On Services&nbsp&nbsp&nbsp
                     <!--span class="pe-7s-bell pixeden" title="Setings"></i>
                     <span class="pe-7s-settings" title="Setings"></span>
